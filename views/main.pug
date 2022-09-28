@@ -1,0 +1,115 @@
+extends layout
+
+block style
+  link(rel="stylesheet", href="/style/home.css")
+
+block welcome-message
+  div.col-10.col-md-6.col-lg-4.text-center.welcome-message
+    div.welcome-message-top-title Welcome
+    div.welcome-message-title-first COST ACTION
+    div.welcome-message-title-last &nbspDKG
+    div.welcome-message-content
+      | Connecting researchers across Europe around the topic of Distributed Knowlede Graphs.
+    div#welcome-message-arrow
+      i.fas.fa-chevron-down
+
+block content
+  div.container-fluid
+    div.row.text-center
+      div.col-lg-4.home-centercol.order-lg-2
+        div.row.justify-content-center.full-height
+          div.col-12.col-xl-8
+            div.row.justify-content-center
+              div.col-12.mission-title MISSION STATEMENT
+              div.col-12.mission-text
+                | Distributed Knowledge Graphs is a COST Action, i.e., a research and innovation network to connect research initiatives around Europe.
+                | A COST Action supports activities such as short-term scientific missions, workshops, and training schools.
+                | Our specific Action is centred around the topic of Distributed Knowledge Graphs, i.e., Knowledge Graphs that are published in a decentralised fashion,
+                | thus forming a distributed system. Our Action started on 23 September 2020
+                | and lasts for four years.
+          div.col-8.footer-add.d-none.d-lg-block.align-self-end
+            div.row
+              div.col-6.footer-image-container
+                img(src="/eu.jpg").footer-image
+              div.col-6.footer-text-eu.text-start
+                | Funded by the Horizon 2020 Framework Programme of the European Union
+
+      div.col-lg-4.home-leftcol.order-lg-1
+        div.row.justify-content-center.full-height
+          div.button.col-10.col-sm-8
+            a(href="/pidskg").button-a Call for Contributions
+            div.button-footer COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs
+            a(href="/workinggroups").button-a Participate
+            div.button-footer We look forward to work with you!
+            a(href="/stsm").button-a Get an STSM
+            //div.button-footer small statement etc
+          div.col-10.footer-add.d-none.d-lg-block.mt-auto.align-self-end
+            div.row
+              div.col-4.footer-image-container
+                img(src="/cost.png").footer-image
+              div.col-8.footer-text-cost.text-start
+                | COST (European Cooperation in Science and Technology) is a funding agency for research and innovation networks.
+                | Our Actions help connect research initiatives across Europe and enable scientists to grow their ideas by sharing them with their peers.
+                | This boosts their research, career and innovation.
+        div.background-credit.row.pt-5.footer-add.d-none.d-lg-block.mt-auto.align-self-end
+          div.col-10.col-sm-8
+            p
+              | Background image generated via
+              |
+              a(href="https://bgjar.com/polygon-luminary.html") BGJar
+
+      div.col-lg-4.order-lg-3
+        div.row.justify-content-center
+          div.col-12.col-sm-8
+            div.row.justify-content-center
+              div.events-title.col-10 UPCOMING EVENTS
+              each event in main[0].organises
+                div.event-entry.col-10
+                  div.row
+                    div.col-12
+                      i.far.fa-calendar.calender-logo &nbsp
+                      - var end = event.endHour ? ' - ' + event.endHour : ''
+                      =event.start
+                  div.row
+                    div.col-12
+                    p #{event.name} &nbsp
+                      span
+                        a(href=`${event.url}`) Learn more
+              a(href='/events') See all events
+
+          div.col-10.col-sm-8.col-xl-6
+            div.row
+              div.twitter-title
+                span FIND VIDEOS OF THE COST ACTION ON&nbsp;
+                a(href='https://www.youtube.com/channel/UCQQDtAXkngxHfqLyzr_D6Zg') YOUTUBE
+            div.row
+              div.twitter-title FOLLOW US ON TWITTER
+              a.twitter-timeline(href='https://twitter.com/cost_dkg?ref_src=twsrc%5Etfw', data-tweet-limit="1") Tweets by cost_dkg
+
+
+          div.button.col-10.footer-add.d-block.d-lg-none
+            div.row
+              div.col-4.footer-image-container
+                img(src="/eu.jpg").footer-image
+              div.col-8.footer-text-eu.text-start
+                | Funded by the Horizon 2020 Framework Programme of the European Union
+          div.button.col-10.footer-add.d-block.d-lg-none
+            div.row
+              div.col-4.footer-image-container
+                img(src="/cost.png").footer-image
+              div.col-8.footer-text-cost.text-start
+                | COST (European Cooperation in Science and Technology) is a funding agency for research and innovation networks.
+                | Our Actions help connect research initiatives across Europe and enable scientists to grow their ideas by sharing them with their peers.
+                | This boosts their research, career and innovation.
+          div.background-credit.row.pt-5.footer-add.d-block.d-lg-none
+            div.col-10.col-sm-8
+              p
+                | Background image generated via
+                |
+                a(href="https://bgjar.com/polygon-luminary.html") BGJar
+
+block scripts
+  script(async='' src='https://platform.twitter.com/widgets.js' charset='utf-8')
+
+
+

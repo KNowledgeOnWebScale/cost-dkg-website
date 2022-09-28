@@ -1,0 +1,32 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/wg.css")
+
+block content
+
+    div.container-xxl.p-0.skewcontainer
+        //make all the trapezoids
+        each group, index in main[0].groups
+            - var even = index % 2;
+            if(even)
+                - var push = ""
+                - var order = ""
+                - var text = "left"
+            else
+                - var push = "-reverse"
+                - var order = "order-first"
+                - var text = "right"
+            div(class=`trapezoid${push}`)
+                div.row.wg-row.justify-content-center.pt-3
+                    div.col-xl-7.wg-row.wg-alinea
+                        div.wg-title
+                            - var second= group.title.substr(5)
+                            .span.wg-title-first= `WG${index + 1}`
+                                | &nbsp
+                            .span.wg-title-second= second
+
+                        div.wg-text!= group.description
+
+                    div.col-xl-4(class=`${order}`).text-center.wg-imgrow
+                        img(src=`/wg/wg${index + 1}.svg`).wg-image

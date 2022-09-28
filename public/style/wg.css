@@ -1,0 +1,129 @@
+.wg-image{
+    height: 100%;
+    width: auto;
+}
+
+.wg-row{
+    height: 35vh;
+}
+
+.wg-imgrow{
+    height: 12vh;
+}
+
+.skewcontainer{
+    position: relative;
+    margin-top: 10vh;
+    color: #636363;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.wg-alinea{
+    position: relative;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    order: 1;
+}
+
+.wg-title{
+    font-size: 2em;
+}
+
+.wg-right{
+    font-size: 1.4em;
+    text-align: right;
+}
+
+.wg-title-first{
+    display: inline-block;
+    color: var(--text-light);
+}
+
+.wg-title-second{
+    display: inline-block;
+}
+
+.wg-text{
+    font-size: 0.70em;
+}
+
+
+/* trapezoid classes are used for the skewed edge of the divs on the different pages */
+/* clip-path is used for the edge */
+/* negative relative positioning makes the divs overlap */
+
+.trapezoid {
+    padding-top: 12vh;
+    position: relative;
+    top: -20%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    background-color: #B3B3B3;
+    height: 84vh;
+    text-align: center;
+}
+
+.trapezoid-reverse{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    top: -5vh;
+}
+
+@media (max-width: 576px) {
+    .skewcontainer{
+        font-size: 3.7vmin;
+    }
+
+    .wg-alinea{
+        width: 100vw;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .trapezoid {
+        padding-top: 7vh;
+        height: 35vh;
+        text-align: left;
+    }
+    .trapezoid-reverse{
+        height: 21vh;
+        text-align: right;
+        top: 0vh;
+    }
+
+
+    .skewcontainer{
+        font-size: 2.1vmin;
+    }
+
+    @media (min-height: 1081px) {
+        .skewcontainer{
+            font-size: 1.8vmin;
+        }
+    }
+
+    .wg-alinea{
+        top: -3.5vh;
+        padding-left: 0;
+        padding-right: 0;
+        order: 0;
+    }
+
+    .wg-row{
+        height: 18vh;
+    }
+
+    .wg-imgrow{
+        margin-top: 0vh;
+        height: 18vh;
+    }
+}
+
+

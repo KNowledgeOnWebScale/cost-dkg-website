@@ -1,0 +1,216 @@
+.banner {
+    height: 90vh;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.home-centercol{
+    padding-top: 0.5em;
+}
+
+.home-leftcol{
+    padding-top: 2em;
+}
+
+.welcome-message{
+    font-size: 1.6vh;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+    margin-top: 5vh;
+}
+
+.welcome-message-top-title{
+    font-size: 1.3em;
+    margin-top: 1.3em;
+}
+.welcome-message-title-first{
+    font-weight: 300;
+    font-size: 3em;
+    display: inline-block;
+}
+
+.welcome-message-title-last{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.welcome-message-content{
+    font-size: 1.5em;
+}
+
+#welcome-message-arrow{
+    margin-top: 0.3em;
+    font-size: 4em;
+}
+
+.button{
+    text-align: center;
+    max-width: 420px;
+}
+
+.button-a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 1.8em;
+    padding: 0.5em;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #017189 0%, hsl(177, 60%, 47%) 100%);
+    border-radius: 68px;
+}
+
+.button-a:hover{
+    color: var(--text-grey);
+}
+
+.button-footer{
+    color: var(--text-light);
+    font-size: 1.2em;
+    margin-bottom: 1.3em;
+    margin-top: 0.5em;
+}
+
+.mission-title{
+    color: var(--text-light);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.mission-text{
+    font-weight: 600;
+    text-align: left;
+    color: var(--text-dark);
+}
+
+.events-title{
+    color: var(--text-light);
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.event-entry{
+    color: var(--text-dark);
+    font-size: 1em;
+    font-weight: 600;
+    border-top: 1px solid var(--text-dark);
+}
+
+.twitter-title{
+    margin-top: 2em;
+    color: var(--text-light);
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.footer-add{
+    margin-top: 1em;
+}
+
+
+.footer-add{
+}
+
+.footer-image-container{
+    position: relative;
+}
+
+.footer-image{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #9BB9CF;
+}
+
+.footer-text-cost{
+    font-size: 0.7em;
+}
+
+.footer-text-eu{
+    font-size: 1em;
+}
+
+/*Small devices*/
+@media (min-width: 576px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .home-leftcol{
+        padding-top: 12%;
+    }
+
+    .home-centercol{
+        padding-top: 4%;
+    }
+
+    .welcome-message{
+        margin-top: 0;
+        font-size: 1.6vh;
+    }
+
+    #welcome-message-arrow{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        height: 60vh;
+    }
+    .welcome-message{
+        font-size: 1.5vh;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #navbarSupportedContent{
+        background-color: transparent;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

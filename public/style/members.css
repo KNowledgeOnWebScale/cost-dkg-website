@@ -1,0 +1,171 @@
+.members-image {
+    width: 50%;
+}
+
+.members-flag {
+    height: 50%;
+    margin-top: 5%;
+}
+
+.members-row {
+    height: 35vh;
+    text-align: center;
+}
+
+.members-imgrow {
+    height: 12vh;
+}
+
+.skewcontainer {
+    position: relative;
+    margin-top: 10vh;
+    color: #636363;
+    font-size: 3.5vw;
+}
+
+.members-alinea {
+    position: relative;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    order: 1;
+}
+
+.members-title {
+    font-size: 2.5em;
+    display: inline-block;
+    color: var(--text-light);
+}
+
+.members-right {
+    font-size: 1.4em;
+    text-align: right;
+}
+
+
+.members-title-second {
+    display: inline-block;
+}
+
+.members-affiliation {
+    font-size: 1em;
+}
+
+.members-role {
+    font-size: 1.5em;
+}
+
+.member-website-link {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.members-bottom-row {
+    text-align: center;
+}
+
+.members-row {
+    text-align: center;
+}
+
+/* same trapezoid system as on the WG page but slightly modified */
+
+.trapezoid {
+    padding-top: 12vh;
+    position: relative;
+    top: -20%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    background-color: #B3B3B3;
+    height: 60vh;
+    text-align: center;
+}
+
+.trapezoid-reverse {
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    height: 36vh;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+
+    .members-alinea {
+        width: 100vw;
+    }
+
+}
+
+
+@media (min-width: 576px) {
+    .trapezoid {
+        padding-top: 5vh;
+        height: 25vh;
+        text-align: left;
+    }
+
+    .trapezoid-reverse {
+        height: 15vh;
+        text-align: right;
+    }
+
+    .skewcontainer {
+        font-size: 0.82em;
+    }
+
+    .members-image {
+        width: initial;
+        height: 100%;
+    }
+
+    @media (max-width: 1400px) {
+        .trapezoid {
+            padding-top: 6vh;
+            height: 30vh;
+        }
+
+        .trapezoid-reverse {
+            height: 18vh;
+        }
+        .skewcontainer {
+            font-size: 0.8em;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .trapezoid {
+            padding-top: 7vh;
+            height: 35vh;
+        }
+
+        .trapezoid-reverse {
+            height: 21vh;
+        }
+        .skewcontainer {
+            font-size: 1.2vh;
+        }
+
+    }
+
+    .members-alinea {
+        padding-left: 0;
+        padding-right: 0;
+        order: 0;
+    }
+
+    .members-row {
+        height: 18vh;
+        top: -1vh;
+    }
+
+    .members-imgrow {
+        margin-top: initial;
+        max-height: 18vh;
+    }
+}
+
+.footer-link{
+    color: gray;
+    font-size: 1.5em;
+}

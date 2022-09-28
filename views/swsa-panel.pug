@@ -1,0 +1,32 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/main.css")
+    link(rel="stylesheet", href="/style/talks.css")
+
+block content
+    div.row.justify-content-center.panel
+        div.col-10
+            h1 SWSA Panel:
+            h1 "#{panel[0].name}"
+
+    div.row.justify-content-center
+        div.col-10
+            p Recording:&nbsp;
+                a(href=panel[0].video.url)
+                    span #{panel[0].video.name}
+            p When: #{panel[0].start}
+            p Moderator: #{panel[0].moderator.fName}
+            p Register&nbsp;
+              a(href="https://forms.gle/FX9z9Z8DFG5PfhrLA") here
+
+    div.row.justify-content-center
+        div.col-10
+            h3 Panelists
+                each panelist in panel[0].panelist
+                    h4.panelist #{panelist.fName}
+                    div.panelist !{panelist.description}
+
+    div.row.justify-content-center
+        div.col-10
+            h2 More information will follow soon!

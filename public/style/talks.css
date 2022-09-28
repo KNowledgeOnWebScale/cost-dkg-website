@@ -1,0 +1,19 @@
+.panel {
+    margin-top: 150px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li.event {
+    margin-top: 20px;
+}
+
+.panelist {
+    padding-left: 20px;
+}
+
+li.event li {
+    padding-bottom: 10px;
+}

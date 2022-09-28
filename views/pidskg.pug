@@ -1,0 +1,52 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/main.css")
+    link(rel="stylesheet", href="/style/talks.css")
+
+block content
+    div.row.justify-content-center.panel
+        div.col-10
+            h1 #{workshop[0].name}
+
+    div.row.justify-content-center
+        div.col-10
+            p Start: #{workshop[0].start}
+            p End: #{workshop[0].end}
+            p Location: #{workshop[0].location.address.streetAddress}, #{workshop[0].location.address.postalCode}, #{workshop[0].location.address.addressLocality}, #{workshop[0].location.address.addressCountry}
+
+    div.row.justify-content-center
+        div.col-10
+            h2 About
+            div !{workshop[0].about}
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Call for Contributions
+            div !{workshop[0].action}
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Agenda
+            div !{workshop[0].agenda1}
+            div !{workshop[0].agenda2}
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Schedule
+            div !{workshop[0].plan}
+            div !{workshop[0].extraInfo}
+
+    div.row.justify-content-center
+        div.col-10
+            h3 Organizers
+            ul
+              each organizer in workshop[0].organizers
+                li #{organizer.name} (#{organizer.home.addressCountry})
+
+    div.row.justify-content-center
+        div.col-10
+            h3 Local organizers
+            ul
+              each organizer in workshop[0].localOrganizers
+                li #{organizer.name} (#{organizer.affiliation.name})

@@ -1,0 +1,480 @@
+openapi: 3.0.2
+info:
+  title: 'Distributed Knowledge Graphs'
+  version: 1.0.0
+x-walder-datasources:
+  - http://localhost:3000/data.ttl
+  - https://natadimou.com/#me
+paths:
+  /:
+    get:
+      summary: Distributed Knowledge Graphs Homepage
+      responses:
+        200:
+          description: Distributed Knowledge Graphs Homepage
+          x-walder-input-text/html: main.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              missionStatement @single
+              logo @single
+              twitter @single
+              organises {
+                name @single
+                start @single
+                end @single @optional
+                url @single
+              }
+            }
+          see: >
+            {
+              id @single
+              see @single
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "name": "schema:name",
+            "url": "schema:url",
+            "missionStatement": "schema:slogan",
+            "logo": "schema:logo",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "organises": {"@reverse": "schema:organizer"},
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see"
+          }
+      x-walder-postprocessing:
+        formatEventDatesKeepOnlyUpcoming:
+          source: utils.js
+  /members:
+    get:
+      summary: DKG Members
+      responses:
+        200:
+          description: Distributed Knowledge Graphs core members
+          x-walder-input-text/html: members.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              members {
+                fullname @single
+                website @single
+                picture @single
+                role @single
+                country @single
+                affiliation @single {
+                  name @single
+                  address @single {
+                    addressCountry @single
+                  }
+                }
+              }
+            }
+          see: >
+            {
+              id @single
+              see @single
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "ex": "http://example.com/dkg/",
+            "foaf": "http://xmlns.com/foaf/0.1/",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "affiliation": "schema:affiliation",
+            "address": "schema:address",
+            "addressCountry": "schema:addressCountry",
+            "members": "ex:coreMember",
+            "role": "ex:role",
+            "country": "ex:country",
+            "fullname": "foaf:name",
+            "website": "foaf:homepage",
+            "picture": "foaf:img",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see"
+          }
+      x-walder-postprocessing:
+        sortMembers:
+          source: utils.js
+  /stsm:
+    get:
+      summary: DKG STSM Grants
+      responses:
+        200:
+          description: Distributed Knowledge Graphs STSM grants
+          x-walder-input-text/html: stsm.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              id @single
+              see @single
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see"
+          }
+  /talks:
+    get:
+      summary: Talks
+      responses:
+        200:
+          description: Information about the DKG talks
+          x-walder-input-text/html: talks.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          panel: >
+            {
+              type (_:Panel)
+              name @single
+              start @single
+              url @single
+              panelist {
+                 fName @single
+              }
+              moderator @single {
+                 fName @single
+              }
+              video @single {
+                name @single
+                url @single
+              }
+            }
+          talks: >
+            {
+              type (_:Talk)
+              start @single
+              name @single
+              about @single
+              actor @single {
+                fName @single
+                about @single
+                description @single
+              }
+              location @single @optional {
+                name @single
+                url @single
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "pb": "http://pbcore.org/pbcore-controlled-vocabularies/creatorrole-and-contributorrole-vocabulary/#",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "Panel": "swc:Panel",
+            "Talk": "swc:TalkEvent",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "description": "schema:description",
+            "location": "schema:location",
+            "video": "schema:video",
+            "url": "schema:url",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "fName": "http://xmlns.com/foaf/0.1/name",
+            "panelist": "pb:Panelist",
+            "moderator": "pb:Moderator"
+          }
+      x-walder-postprocessing:
+        formatStartDateTalksAndPanel:
+          source: utils.js
+  /swsa-panel:
+    get:
+      summary: SWSA panel
+      responses:
+        200:
+          description: Information about the SWSA panel
+          x-walder-input-text/html: swsa-panel.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          panel: >
+            {
+              type (_:Panel)
+              name @single
+              start @single
+              panelist {
+                 fName @single
+                 description @single
+              }
+              moderator @single {
+                 fName @single
+              }
+              video @single {
+                name @single
+                url @single
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "pb": "http://pbcore.org/pbcore-controlled-vocabularies/creatorrole-and-contributorrole-vocabulary/#",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "Panel": "swc:Panel",
+            "Talk": "swc:TalkEvent",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "video": "schema:video",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "fName": "http://xmlns.com/foaf/0.1/name",
+            "panelist": "pb:Panelist",
+            "moderator": "pb:Moderator"
+          }
+      x-walder-postprocessing:
+        formatStartDateTalksAndPanel:
+          source: utils.js
+  /pidskg:
+    get:
+      summary: COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs (PIDSKG)
+      responses:
+        200:
+          description: Information about COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs (PIDSKG)
+          x-walder-input-text/html: pidskg.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          workshop: >
+            {
+              type (_:Workshop)
+              name @single
+              start @single
+              end @single
+              about @single
+              agenda1 @single
+              agenda2 @single
+              plan @single
+              extraInfo @single
+              action @single
+              location @single {
+                name @single
+                address @single {
+                  streetAddress @single
+                  postalCode @single
+                  addressLocality @single
+                  addressCountry @single
+                }
+              }
+              organizers {
+                name @single
+                home @single {
+                   addressCountry @single
+                }
+              }
+              localOrganizers {
+                name @single
+                affiliation @single {
+                  name @single
+                }
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "pb": "http://pbcore.org/pbcore-controlled-vocabularies/creatorrole-and-contributorrole-vocabulary/#",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
+            "Workshop": "swc:WorkshopEvent",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "agenda1": "ex:agenda_1",
+            "agenda2": "ex:agenda_2",
+            "plan": "ex:plan",
+            "extraInfo": "ex:extraInformation",
+            "action": "schema:potentialAction",
+            "address": "schema:address",
+            "streetAddress": "schema:streetAddress",
+            "postalCode": "schema:postalCode",
+            "addressLocality": "schema:addressLocality",
+            "addressCountry": "schema:addressCountry",
+            "location": "schema:location",
+            "organizers": "schema:organizer",
+            "home": "schema:homeLocation",
+            "affiliation": "schema:affiliation",
+            "localOrganizers": "ex:localOrganizer",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+      x-walder-postprocessing:
+        formatStartDateTalksAndPanel:
+          source: utils.js
+        markdownWorkshop:
+          source: markdown.js
+  /workinggroups:
+    get:
+      summary: DKG Working Groups
+      responses:
+        200:
+          description: Distributed Knowledge Graphs working groups
+          x-walder-input-text/html: wgroups.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              groups {
+                title @single
+                description @single
+              }
+            }
+          see: >
+            {
+              id @single
+              see @single
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "ex": "http://example.com/dkg/",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "groups": "ex:workPackage",
+            "title": "schema:title",
+            "description": "ex:description",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see"
+          }
+  /publications:
+    get:
+      summary: DKG Publications
+      responses:
+        200:
+          description: Distributed Knowledge Graphs publications
+          x-walder-input-text/html: publications.pug
+
+      x-walder-query:
+        graphql-query:
+          see: >
+            {
+              id @single
+              see @single
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "ex": "http://example.com/dkg/",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "groups": "ex:workPackage",
+            "title": "schema:title",
+            "description": "ex:description",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see"
+          }
+  /events:
+    get:
+      summary: Past and upcoming events
+      responses:
+        200:
+          description: Past and upcoming events
+          x-walder-input-text/html: events.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              missionStatement @single
+              logo @single
+              twitter @single
+              organises {
+                name @single
+                start @single
+                url @single
+              }
+            }
+          see: >
+            {
+              id @single
+              see @single
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "name": "schema:name",
+            "url": "schema:url",
+            "missionStatement": "schema:slogan",
+            "logo": "schema:logo",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "organises": {"@reverse": "schema:organizer"},
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see"
+          }
+      x-walder-postprocessing:
+        formatEventDates:
+          source: utils.js
+x-walder-errors:
+  404:
+    description: Page not found
+    x-walder-input-text/html: error404.html
+  500:
+    description: Internal server error
+    x-walder-input-text/html: error500.html

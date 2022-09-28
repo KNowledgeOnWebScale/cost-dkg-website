@@ -1,0 +1,42 @@
+extends layout
+
+block style
+  link(rel="stylesheet", href="/style/members.css")
+
+block content
+
+  div.container-xxl.p-0.skewcontainer
+    each member, index in main[0].members
+      - var even = index % 2;
+      if(even)
+        - var push = ""
+        - var order = ""
+        - var orderreverse = ""
+        - var text = "left"
+      else
+        - var push = "-reverse"
+        - var order = "order-sm-first"
+        - var orderreverse = "order-sm-last"
+        - var text = "right"
+      div(class=`trapezoid${push}`)
+        div.row.d-flex.members-row.justify-content-center.align-items-center
+          div.col-4.col-sm-3(class=`${orderreverse}`).text-center.members-imgrow
+            img(src="/members/" + member.picture).members-image
+
+          div.col-5.members-row.members-alinea
+              div.members-title
+                - var second= member.website.substr(30)
+                =member.fullname
+              div.members-affiliation= member.affiliation.name
+
+              div.members-role= member.role
+                a.member-website-link(href=member.website)
+                  if member.website.length <= 30
+                    p.member-website-text=member.website
+                  else
+                    p.member-website-text=member.website.substring(0, 25) + "..."
+
+
+
+          div.col-4.col-sm-3(class=`${order}`).text-center.members-imgrow
+            img.member-country(src="/countries/" + member.country.toLowerCase() + ".png").members-flag

@@ -1,0 +1,18 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/events.css")
+
+block content
+    div.row.justify-content-center.panel.content
+        div.col-8
+            h1 Events
+            p Find all past and upcoming events below.
+
+    div.row.justify-content-center
+        div.col-8
+            ul
+                each event in main[0].organises
+                    li
+                        a(href=`${event.url}`) #{event.name}
+                        span &nbsp(#{event.start})

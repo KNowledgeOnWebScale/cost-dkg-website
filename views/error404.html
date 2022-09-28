@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport", content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet", href="/style/main.css">
+  <link rel="stylesheet", href="/style/error.css">
+  <link href="//fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="/style/fontawesome/css/all.css" rel="stylesheet">
+  <title Distributed Knowledge Graphs></title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="/">
+      <div class="logo-container">
+        <p class="logo-text">DKG</p>
+        <p class="logo-subtext">COST</p>
+      </div>
+    </a>
+    <div class="hb-menu">
+      <input type="checkbox", name="mobile-toggle">
+      <span id="hb-top"></span>
+      <span id="hb-mid"></span>
+      <span id="hb-btm"></span>
+    </div>
+    <div class="nav-items">
+      <div class="nav-el">
+        <a class="nav-link" href="/">
+          <div class="link-container">
+            <i class="fas fa-home"></i>
+            <p class="nav-text">HOME</p>
+            </i>
+          </div>
+        </a>
+      </div>
+      <div class="nav-el">
+        <a class="nav-link" href="/workinggroups">
+          <div class="link-container">
+            <i class="fas fa-users"></i>
+            <p class="nav-text">WORKING GROUPS</p>
+            </i>
+          </div>
+        </a>
+      </div>
+      <div class="nav-el">
+        <a class="nav-link" href="/stsm">
+          <div class="link-container">
+            <i class="fas fa-microscope"></i>
+            <p class="nav-text">STSM GRANTS</p>
+            </i>
+          </div>
+        </a>
+      </div>
+      <div class="nav-el">
+        <a class="nav-link" href="/members">
+          <div class="link-container">
+            <i class="fas fa-user"></i>
+            <p class="nav-text">MEMBERS</p>
+            </i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="error-block content-bm">
+      <div class="content-block">
+        <p class="error-message">
+          404: Page Not Found
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      &copy; 2020
+    </div>
+  </div>
+  <script>
+    let checkbox = document.querySelector("input[name=mobile-toggle]");
+    let root = document.documentElement;
+
+    checkbox.addEventListener( 'change', function() {
+      if(this.checked) {
+          root.style.setProperty('--mobile-menu-transform', 'none');
+      } else {
+          root.style.setProperty('--mobile-menu-transform', 'translate(100%, 0)');
+      }
+    });
+  </script>
+</body>

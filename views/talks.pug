@@ -1,0 +1,43 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/main.css")
+    link(rel="stylesheet", href="/style/talks.css")
+
+block content
+    div.row.justify-content-center.panel
+        div.col-10
+            h1 DKG Talks
+
+            p In collaboration with SWSA, the Action organises a talk series on Distributed Knowledge Graphs and related aspects of Semantic Web research.
+
+    - var panelist = panel[0].panelist.map(a => a.fName).join(', ');
+
+    div.row.justify-content-center
+        div.col-10
+            ul
+              each talk in talks
+                  li.event
+                    h3 #{talk.actor.fName}: "#{talk.name}" (#{talk.actor.about})
+                    ul
+                        - var start = (new Date(talk.start))
+                        li When: #{talk.start}
+                        if talk.location
+                            li
+                                span Where:&nbsp;
+                                a(href=talk.location.url)
+                                    span #{talk.location.name}
+                        li About the speaker: #{talk.actor.description}
+                        li About the talk: #{talk.about}
+              li.event
+                h3 SWSA Panel "#{panel[0].name}"
+                ul
+                    li
+                        span Recording:&nbsp;
+                        a(href=panel[0].video.url)
+                            span #{panel[0].video.name}
+                    li When: #{panel[0].start}
+                    li Moderator: #{panel[0].moderator.fName}
+                    li Panelist: #{panelist}
+                    li
+                        a(href=panel[0].url) Learn more

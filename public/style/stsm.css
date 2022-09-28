@@ -1,0 +1,25 @@
+.temp-message{
+    color: var(--text-light);
+    margin-top: 2.5em;
+    font-size: 2em;
+}
+
+.twitter-message{
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.twitter-message:hover{
+    color: var(--text-grey);
+}
+
+.stsm-content {
+    margin-top: 5.5em;
+}
+
+/*Small devices*/
+@media (min-width: 576px) {
+    .temp-message{
+        margin-top: 5em;
+    }
+}
