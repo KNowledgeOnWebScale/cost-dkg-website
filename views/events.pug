@@ -7,7 +7,7 @@ block content
     div.row.justify-content-center.panel.content
         div.col-8
             h1 Events
-            p Find all past and upcoming events below.
+            p Find all past and upcoming events of this COST action below.
 
     div.row.justify-content-center
         div.col-8
@@ -16,3 +16,11 @@ block content
                     li
                         a(href=`${event.url}`) #{event.name}
                         span &nbsp(#{event.start})
+
+            p Find other, relevant events below.
+
+            ul
+              each event in main[0].endorses
+                  li
+                      a(href=`${event.url}`) #{event.name}
+                      span &nbsp(#{event.start})

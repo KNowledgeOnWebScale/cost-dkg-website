@@ -449,6 +449,13 @@ paths:
                 start @single
                 url @single
               }
+              endorses {
+                object @single {
+                  name @single
+                  start @single
+                  url @single
+                }
+              }
             }
           see: >
             {
@@ -464,7 +471,9 @@ paths:
             "logo": "schema:logo",
             "start": "schema:startDate",
             "end": "schema:endDate",
+            "object": "schema:object",
             "organises": {"@reverse": "schema:organizer"},
+            "endorses": {"@reverse": "schema:endorsee"},
             "twitter": "http://open.vocab.org/terms/twitter-id",
             "see": "http://www.w3.org/2000/01/rdf-schema#see"
           }

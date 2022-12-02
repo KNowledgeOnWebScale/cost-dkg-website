@@ -28,10 +28,7 @@ module.exports = {
         return queryResults;
     },
     formatEventDates: (queryResults) => {
-        const originalData = queryResults.data[0];
-        let events = originalData.organises || [];
-
-        events.sort((a,b) => {
+        const compareFn = (a,b) => {
             if ((new Date(a.start)) < (new Date(b.start))) {
                 return 1;
             } else if ((new Date(a.start)) > (new Date(b.start))) {
@@ -39,11 +36,20 @@ module.exports = {
             } else {
                 return 0;
             }
-        });
+        };
 
+        const originalData = queryResults.data[0];
+        let events = originalData.organises || [];
+        events.sort(compareFn);
         formatEventDates(events, true);
-
         originalData.organises = events;
+
+        events = originalData.endorses || [];
+        events = events.map(a => a.object);
+        events.sort(compareFn);
+        formatEventDates(events, true);
+        originalData.endorses = events;
+
         return queryResults;
     },
     formatStartDateTalksAndPanel: (data) => {
