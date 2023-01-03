@@ -547,3 +547,68 @@ Social activity: The High Furnaces & Exhibitions at Belval
     a schema:EndorseAction;
     schema:endorsee :;
     schema:object :guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them.
+
+:lessons-learnt-in-dkg-projects
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:url "#";
+    schema:name "Lessons Learnt in DKG projects" ;
+    schema:startDate "2023-01-26T09:00:00+01:00" .
+
+:metadata-for-federated-query-processing-in-distributed-knowledge-graphs
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Metadata for Federated Query Processing in Distributed Knowledge Graphs" ;
+    schema:url "#";
+    schema:startDate "2023-04-25T09:00:00+02:00" ;
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Izmir" ;
+                                        schema:addressCountry  "Turkey" ] ] .
+
+:working-meeting-privacy-and-security-in-distributed-knowledge-graphs
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Working Meeting Privacy and Security in Distributed Knowledge Graphs" ;
+    schema:url "#";
+    schema:startDate "2023-02-13T09:00:00+01:00" ;
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Salerno" ;
+                                        schema:addressCountry  "Italy" ] ] .
+
+:plenary-gp3-meeting
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Plenary GP3 Meeting" ;
+    schema:startDate "2023-09-25T09:00:00+02:00" ;
+    schema:url "#";
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Málaga" ;
+                                        schema:addressCountry  "Spain" ] ] .
+
+:solid-symposium
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Solid Symposium" ;
+    schema:startDate "2023-03-30T09:00:00+02:00" ;
+    schema:url "https://solid.ti.rw.fau.de/public/2023/solid-symposium/" ;
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Nuremberg" ;
+                                        schema:addressCountry  "Germany" ] ] .
+
+:gp2-plenary-meeting
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "GP2 Plenary Meeting" ;
+    schema:startDate "2022-10-13T09:00:00+01:00" ;
+    schema:endDate "2022-10-14T17:00:00+01:00" ;
+    schema:url "#" ;
+    schema:location  [ a              schema:Place ;
+                       schema:name "SZTAKI";
+                       schema:url "https://www.sztaki.hu/";
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Budapest" ;
+                                        schema:addressCountry  "Hungary" ] ] .

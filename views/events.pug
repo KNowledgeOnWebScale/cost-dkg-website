@@ -14,7 +14,10 @@ block content
             ul
                 each event in main[0].organises
                     li
-                        a(href=`${event.url}`) #{event.name}
+                        if event.url !== '#'
+                            a(href=`${event.url}`) #{event.name}
+                        else
+                            span #{event.name}
                         span &nbsp(#{event.start})
 
             p Find other, relevant events below.

@@ -75,8 +75,9 @@ block content
                   div.row
                     div.col-12
                     p #{event.name} &nbsp
-                      span
-                        a(href=`${event.url}`) Learn more
+                      if event.url !== '#'
+                        span
+                          a(href=`${event.url}`) Learn more
               a(href='/events') See all events
 
           div.col-10.col-sm-8.col-xl-6
