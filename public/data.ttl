@@ -612,3 +612,15 @@ Social activity: The High Furnaces & Exhibitions at Belval
                        schema:address [ a                      schema:PostalAddress ;
                                         schema:addressLocality "Budapest" ;
                                         schema:addressCountry  "Hungary" ] ] .
+
+:dkg-plenary-2021
+    a                schema:Event ;
+    schema:organizer : ;
+    schema:name      "DKG plenary meeting 2021" ;
+    schema:startDate "2021-09-08T09:00:00+02:00" ;
+    schema:endDate   "2021-09-09T17:00:00+02:00" ;
+    schema:url "#" ;
+    schema:location  [ a              schema:Place ;
+                                            schema:address [ a                      schema:PostalAddress ;
+                                                             schema:addressLocality "Amsterdam" ;
+                                                             schema:addressCountry  "The Netherlands" ] ] .
