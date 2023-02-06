@@ -626,7 +626,29 @@ This workshop series brings together computer scientists and legal experts, with
 
 In this second edition of the workshop, we aim to consolidate progress on the problems identified in the first edition of the workshop and produce a common deliverable. The program will focus on exchanging methodologies, drawing from areas such as cybersecurity and privacy law, that may be brought together to develop privacy solutions for distributed knowledge graphs. Towards this aim the program will be a mix of talks, demos, and tutorials, that aim to present the current state of research, and trajectories.
 
+The workshop comprises talks representing papers (published or in progress), demos, and tutorials in related areas not limited to the following:
+1.HCI aspects for information provision and controls
+2.Consenting
+3.GDPR Compliance
+4.Data Governance
+5.Cybersecurity compliance (ISO standards)
+6.Measures for enhancing security and privacy
+7.Cyber-risk assessments and auditing
+8.Automating compliance checking and accountability
+9.Vulnerability assessment and management
+10.Access and usage control policies
+11.Emerging privacy legislation and their implications
+12.Privacy-preserving data analysis technologies/ privacy enhancing technologies
+13.Risk and Impact assessments
+14.Data spaces
+15.Solutions for Data Sovereignty
+16.Relation to emerging regulatory frameworks (DGA, DSA, DMA, ePrivacy, AI Act, Data Act, Health Data Spaces
+17.Identity management and authentication
+
 This workshop will place an emphasis on discussing a potential policy layer enhancing existing authentication and authorisation mechanisms, where policies, in addition to constraining operations that agents may perform on data, express information on what is the context, norm, rules, principles, guidelines, or regulation for what/when/who/where/how data should be used, accessed, or otherwise processed. A policy layer is where the typical information for determining access (i.e. request notice) and its decision (e.g. consent or permission) are concerned. We expect an output of the workshop to include a report specifying the consensus of participants on the requirements of such a policy layer.
+
+
+
 
     """ ;
     schema:location  [ a              schema:Place ;
@@ -798,13 +820,5 @@ In conclusion, this submission proposes the use of the existing policy languages
 
 <https://www.google.com/maps/dir/40.7747822,14.7892919/La+Bottega+Dei+Mangiari,+Via+Roma,+35,+84084+Fisciano+SA/@40.7719074,14.791323,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x133bc5a9e995c38b:0xa3f282ee497847b2!2m2!1d14.7977439!2d40.7690316!3e2>
 
-""" ;
-
-    ex:research_area "HCI aspects for information provision and controls", "Consenting", "GDPR Compliance",
-"Data Governance", "Cybersecurity compliance (ISO standards)", "Measures for enhancing security and privacy",
-"Cyber-risk assessments and auditing", "Automating compliance checking and accountability", 
-"Vulnerability assessment and management", "Access and usage control policies", "Emerging privacy legislation and their implications",
-"Privacy-preserving data analysis technologies/ privacy enhancing technologies", "Risk and Impact assessments", 
-"Data spaces", "Solutions for Data Sovereignty", "Relation to emerging regulatory frameworks (DGA, DSA, DMA, ePrivacy, AI Act, Data Act, Health Data Spaces",
-"Identity management and authentication".
+""" .
 
