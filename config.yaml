@@ -509,7 +509,7 @@ paths:
               about @single
               agenda1 @single
               agenda2 @single
-              research_area @single
+              journal_issue @single
               travel_info @single
               plan @single
               location @single {
@@ -544,9 +544,9 @@ paths:
             "travel_info": "ex:travel_info",
             "agenda1": "ex:agenda_1",
             "agenda2": "ex:agenda_2",
-            "research_area": "ex:research_area",
             "committee_member": "ex:committee_member",
             "plan": "ex:plan",
+            "journal_issue": "ex:journal_issue",
             "address": "schema:address",
             "streetAddress": "schema:streetAddress",
             "postalCode": "schema:postalCode",
