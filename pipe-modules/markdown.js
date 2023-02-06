@@ -29,8 +29,8 @@ module.exports = {
         workshop.action = render(workshop.action);
       }
 
-      if (workshop.research_area) {
-        workshop.research_area = render(workshop.research_area);
+      if (workshop.journal_issue) {
+        workshop.journal_issue = render(workshop.journal_issue);
       }
 
       if (workshop.travel_info) {
