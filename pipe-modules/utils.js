@@ -15,7 +15,7 @@ module.exports = {
             queryResults.data[0].members = memberList;
             return queryResults;
         }
-        return queryResults
+        return queryResults;
     },
     formatEventDatesKeepOnlyUpcoming: (queryResults) => {
         const originalData = queryResults.data[0];
@@ -57,11 +57,11 @@ module.exports = {
             data.data.forEach(event => {
                 console.log(event);
                 function formatDate(date) {
-                    const nyDate = utcToZonedTime(date, nyTimeZone)
-                    const brusselsDate = utcToZonedTime(date, brusselsTimeZone)
-                    const hongKongDate = utcToZonedTime(date, hongKongTimeZone)
+                    const nyDate = utcToZonedTime(date, nyTimeZone);
+                    const brusselsDate = utcToZonedTime(date, brusselsTimeZone);
+                    const hongKongDate = utcToZonedTime(date, hongKongTimeZone);
 
-                    return getStart(brusselsDate, brusselsTimeZone, ) + ' / ' + getStart(nyDate, nyTimeZone) + ' / ' + getStart(hongKongDate, hongKongTimeZone);
+                    return getStart(brusselsDate, brusselsTimeZone ) + ' / ' + getStart(nyDate, nyTimeZone) + ' / ' + getStart(hongKongDate, hongKongTimeZone);
                 }
 
                 if (event.start) {
@@ -71,7 +71,7 @@ module.exports = {
                 if (event.end) {
                     event.end = formatDate(new Date(event.end));
                 }
-            })
+            });
         }
 
         data.data.sort((a, b) => {
@@ -114,7 +114,7 @@ function formatEventDates(events, showYear) {
         let formatStr = 'E, MMM do ha (z)';
 
         if (showYear) {
-            formatStr = 'E, MMM do yyyy ha (z)'
+            formatStr = 'E, MMM do yyyy ha (z)';
         }
 
         event.start = tryCET(format(brusselsDate, formatStr, { brusselsTimeZone }));

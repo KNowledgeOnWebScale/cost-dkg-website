@@ -28,6 +28,18 @@ module.exports = {
       if (workshop.action) {
         workshop.action = render(workshop.action);
       }
+
+      if (workshop.research_area) {
+        workshop.research_area = render(workshop.research_area);
+      }
+
+      if (workshop.travel_info) {
+        workshop.travel_info = render(workshop.travel_info);
+      }
+
+      if (workshop.committee_member) {
+        workshop.committee_member = render(workshop.committee_member);
+      }
     }
 
     return data;
