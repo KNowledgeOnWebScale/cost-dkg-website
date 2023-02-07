@@ -548,45 +548,6 @@ Social activity: The High Furnaces & Exhibitions at Belval
     schema:endorsee :;
     schema:object :guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them.
 
-:lessons-learnt-in-dkg-projects
-    a                                                                              schema:Event ;
-    schema:organizer : ;
-    schema:url "#";
-    schema:name "Lessons Learnt in DKG projects" ;
-    schema:startDate "2023-01-26T09:00:00+01:00" .
-
-:metadata-for-federated-query-processing-in-distributed-knowledge-graphs
-    a                                                                              schema:Event ;
-    schema:organizer : ;
-    schema:name "Metadata for Federated Query Processing in Distributed Knowledge Graphs" ;
-    schema:url "#";
-    schema:startDate "2023-04-25T09:00:00+02:00" ;
-    schema:location  [ a              schema:Place ;
-                       schema:address [ a                      schema:PostalAddress ;
-                                        schema:addressLocality "Izmir" ;
-                                        schema:addressCountry  "Turkey" ] ] .
-
-:plenary-gp3-meeting
-    a                                                                              schema:Event ;
-    schema:organizer : ;
-    schema:name "Plenary GP3 Meeting" ;
-    schema:startDate "2023-09-25T09:00:00+02:00" ;
-    schema:url "#";
-    schema:location  [ a              schema:Place ;
-                       schema:address [ a                      schema:PostalAddress ;
-                                        schema:addressLocality "Málaga" ;
-                                        schema:addressCountry  "Spain" ] ] .
-
-:solid-symposium
-    a                                                                              schema:Event ;
-    schema:organizer : ;
-    schema:name "Solid Symposium" ;
-    schema:startDate "2023-03-30T09:00:00+02:00" ;
-    schema:url "https://solid.ti.rw.fau.de/public/2023/solid-symposium/" ;
-    schema:location  [ a              schema:Place ;
-                       schema:address [ a                      schema:PostalAddress ;
-                                        schema:addressLocality "Nuremberg" ;
-                                        schema:addressCountry  "Germany" ] ] .
 
 :gp2-plenary-meeting
     a                                                                              schema:Event ;
@@ -617,40 +578,39 @@ Social activity: The High Furnaces & Exhibitions at Belval
 
 :workshop-pidskg23
     a                                                                              swc:WorkshopEvent, schema:Event ;
-    schema:name "Second COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs PIDSKG’23" ;
+    schema:name "Second COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs PIDSKG23" ;
     schema:startDate "2023-02-13T09:30:00+01:00" ;
     schema:endDate   "2023-02-15T18:00:00+01:00" ;
     schema:url       "/pidskg23" ;
+    schema:organizer : ;
     schema:about     """
 This workshop series brings together computer scientists and legal experts, with a focus on Solid as a concrete system for data sovereignty, in order to ground a debate around emergent problems from both a technical cybersecurity perspective, and from the legal perspective of data protection. The first edition was hosted by University of Luxembourg 13-15 June 2022, and explored problems concerning privacy in distributed knowledge graphs from an interdisciplinary perspective.
 
 In this second edition of the workshop, we aim to consolidate progress on the problems identified in the first edition of the workshop and produce a common deliverable. The program will focus on exchanging methodologies, drawing from areas such as cybersecurity and privacy law, that may be brought together to develop privacy solutions for distributed knowledge graphs. Towards this aim the program will be a mix of talks, demos, and tutorials, that aim to present the current state of research, and trajectories.
 
-The workshop comprises talks representing papers (published or in progress), demos, and tutorials in related areas not limited to the following:
-1.HCI aspects for information provision and controls
-2.Consenting
-3.GDPR Compliance
-4.Data Governance
-5.Cybersecurity compliance (ISO standards)
-6.Measures for enhancing security and privacy
-7.Cyber-risk assessments and auditing
-8.Automating compliance checking and accountability
-9.Vulnerability assessment and management
-10.Access and usage control policies
-11.Emerging privacy legislation and their implications
-12.Privacy-preserving data analysis technologies/ privacy enhancing technologies
-13.Risk and Impact assessments
-14.Data spaces
-15.Solutions for Data Sovereignty
-16.Relation to emerging regulatory frameworks (DGA, DSA, DMA, ePrivacy, AI Act, Data Act, Health Data Spaces
-17.Identity management and authentication
+The workshop comprises talks representing papers (published or in progress), demos, and tutorials in related areas not limited to the following:\n
+1.HCI aspects for information provision and controls\n
+2.Consenting\n
+3.GDPR Compliance\n
+4.Data Governance\n
+5.Cybersecurity compliance (ISO standards)\n
+6.Measures for enhancing security and privacy\n
+7.Cyber-risk assessments and auditing\n
+8.Automating compliance checking and accountability\n
+9.Vulnerability assessment and management\n
+10.Access and usage control policies\n
+11.Emerging privacy legislation and their implications\n
+12.Privacy-preserving data analysis technologies/ privacy enhancing technologies\n
+13.Risk and Impact assessments\n
+14.Data spaces\n
+15.Solutions for Data Sovereignty\n
+16.Relation to emerging regulatory frameworks (DGA, DSA, DMA, ePrivacy, AI Act, Data Act, Health Data Spaces\n
+17.Identity management and authentication\n
 
 This workshop will place an emphasis on discussing a potential policy layer enhancing existing authentication and authorisation mechanisms, where policies, in addition to constraining operations that agents may perform on data, express information on what is the context, norm, rules, principles, guidelines, or regulation for what/when/who/where/how data should be used, accessed, or otherwise processed. A policy layer is where the typical information for determining access (i.e. request notice) and its decision (e.g. consent or permission) are concerned. We expect an output of the workshop to include a report specifying the consensus of participants on the requirements of such a policy layer.
 
-
-
-
     """ ;
+
     schema:location  [ a              schema:Place ;
                        schema:name
                          "B2 Building, University of Salerno, Campus Fisciano" ;
@@ -660,38 +620,52 @@ This workshop will place an emphasis on discussing a potential policy layer enha
                                         schema:addressLocality "Ufficio Relazioni con il Pubblico" ;
                                         schema:addressCountry  "Italy" ] ] ;
 
-    ex:committee_member                                                              [ schema:name        "Inès Akaichi" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "Vienna University of Economics and Business" ] ],
-                                                                                   [ schema:name        "Rob Brennan" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "University College Dublin" ] ],
-                                                                                   [ schema:name        "Beatriz Esteves" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "Universidad Politécnica de Madrid" ] ] ,
-                                                                                    [ schema:name        "Christian Esposito" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "University of Salerno" ] ],
-                                                                                   [ schema:name        "Olaf Hartig" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "Linkoping University" ] ],
-                                                                                   [ schema:name        "Ross Horne" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "University of Luxembourg" ] ],
-                                                                                    [ schema:name        "Harshvardhan Pandit" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "Dublin City University" ] ],
-                                                                                   [ schema:name        "Chang Sun" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "Maastricht University" ] ],
-                                                                                   [ schema:name        "Livio Robaldo" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "Legal Innovation Lab Wales" ] ],
-                                                                                    [ schema:name        "Arianna Rossi" ;
-                                                                                     schema:affiliation [ schema:name
-                                                                                                                  "University of Luxembourg" ] ];
+    ex:cmember           [ schema:name        "Inès Akaichi" ;
+                                schema:affiliation [ schema:name
+                                                            "Vienna University of Economics and Business" ] ],
+                            [ schema:name        "Rob Brennan" ;
+                                schema:affiliation [ schema:name
+                                                            "University College Dublin" ] ],
+                            [ schema:name        "Beatriz Esteves" ;
+                                schema:affiliation [ schema:name
+                                                            "Universidad Politécnica de Madrid" ] ] ,
+                            [ schema:name        "Christian Esposito" ;
+                                schema:affiliation [ schema:name
+                                                            "University of Salerno" ] ],
+                            [ schema:name        "Olaf Hartig" ;
+                                schema:affiliation [ schema:name
+                                                            "Linkoping University" ] ],
+                            [ schema:name        "Ross Horne" ;
+                                schema:affiliation [ schema:name
+                                                            "University of Luxembourg" ] ],
+                            [ schema:name        "Harshvardhan Pandit" ;
+                                schema:affiliation [ schema:name
+                                                            "Dublin City University" ] ],
+                            [ schema:name        "Chang Sun" ;
+                                schema:affiliation [ schema:name
+                                                            "Maastricht University" ] ],
+                            [ schema:name        "Livio Robaldo" ;
+                                schema:affiliation [ schema:name
+                                                            "Legal Innovation Lab Wales" ] ],
+                            [ schema:name        "Arianna Rossi" ;
+                                schema:affiliation [ schema:name
+                                                            "University of Luxembourg" ] ]; 
 
-    ex:travel_info                                                                """
+    ex:committee """
+Inès Akaichi, Vienna university of Economics and Business, Austria\n
+Rob Brennan, University College Dublin, Ireland\n
+Beatriz Esteves, Universidad Politécnica de Madrid, Spain\n
+Christian Esposito, University of Salerno, Italy\n
+Olaf Hartig, Linkoping University, Sweden\n
+Ross Horne, University of Luxembourg, Luxembourg\n
+Harshvardhan Pandit, Dublin City University, Ireland\n
+Chang Sun, Maastricht University, Netherlands\n
+Livio Robaldo, Legal Innovation Lab Wales, Swansea University, UK\n
+Arianna Rossi, University of Luxembourg, Luxembourg\n
+
+    """;                                        
+
+    ex:travel                                                                """
 We will hold our workshop on our university campus (building F2 - <https://web.unisa.it/vivere-il-campus/unisa-experience/campus-map>). The nearest hotel is <https://www.hoteldeiprincipati.it/>, on booking website the room rate is 68€. There are hotels in Salerno city, which is connected to the campus with a bus line (number 17). Timetable available at <https://www.fsbusitalia.it/content/fsbusitalia/it/campania/orari-e-linee.html>. You can also think of booking a hotel in Napoli, and from the central train station, there is a direct bus to our campus (it takes an hour).
 
 
@@ -710,7 +684,7 @@ From the Capodichino airport, there is a direct bus to the campus, and also to S
     """;
 
 
-    ex:journal_issue                                                                """
+    ex:journalIssue                                                                """
 In the Luxembourg meeting we identified a journal publication opportunity for documenting your work and as a possible venue for publications based on COST collaborations. We have extended the deadline to 31 May 2023 so that outputs from the February and March COST meetings can be included.
 
 
@@ -818,7 +792,117 @@ In conclusion, this submission proposes the use of the existing policy languages
 
 19:00 dinner: La Bottega Dei Mangiari, Via Roma, 35, 84084 Fisciano SA
 
-<https://www.google.com/maps/dir/40.7747822,14.7892919/La+Bottega+Dei+Mangiari,+Via+Roma,+35,+84084+Fisciano+SA/@40.7719074,14.791323,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x133bc5a9e995c38b:0xa3f282ee497847b2!2m2!1d14.7977439!2d40.7690316!3e2>
+<https://www.google.com/maps/dir/40.7747822,14.7892919/La+Bottega+Dei+Mangiari,+Via+Roma,+35,+84084+Fisciano+SA/@40.7719074,14.791323,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x133bc5a9e995c38b:0xa3f282ee497847b2!2m2!1d14.7977439!2d40.7690316!3e2> \n\n
+
+
+
+
+
+#### Tuesday 14 February (workshops & short papers):
+
+9:30-11:00: Arianna Rossi, University of Luxembourg, Iris Xu & Aurelia Tamo-Larrieux, Maastricht University
+Part I: HCI and privacy
+
+11:00-11:30: second breakfast
+
+11:30-13:00: Arianna Rossi, University of Luxembourg, Iris Xu & Aurelia Tamo-Larrieux, Maastricht University
+Part II: HCI and privacy
+
+Abstract: We have different styles of elaborating data-related information (eg experts vs laypeople) as well as varying data sharing preferences. Asking users to continuously interact with data permission requests does not necessarily enhance their autonomy and their agency over their data - quite the contrary. The personalisation of transparency and data permissions may constitute an answer to such challenges: it can be achieved through manual configuration, based on the user social networks, personalized assistance (e.g. chatbots), data-driven personalization based on past preferences and behaviors, and many more.
+This 3 hours workshop will explore this topic in an interdisciplinary manner through foresight techniques like backcasting.
+Guiding questions:
+- To what extent does Solid enable the personalization of disclosures and the tailoring of data permission requests?
+- Which solutions seem the most promising? What requirements?
+- What are the benefits and risks?
+- What is feasible from a technical, usable and legal perspective?
+
+13:00-14:30 Buffet lunch
+
+14:30-16:00: parallel collaboration sessions TBC.
+
+16:00-16:30: coffee and refreshments
+
+16:30-18:00: Gertjan De Mulder 45min, Ines Akaichi 45mins
+Chair: Livio Robaldo
+
+Speaker: Gertjan De Mulder, SolidLab, Ghent University – imec
+Ruben Verborgh, SolidLab, Ghent University – imec
+Title: End-user identity in Solid: the interoperability problem space
+
+Abstract: The Solid ecosystem uses a decentralized mechanism of WebIDs to identify agents and to manage their access control. As the number of participants in the ecosystem increases, the question of how to manage a multitude and variety of WebIDs becomes increasingly pressing. To this end, we performed an assessment of the current state of end-user identity and the demands going forward. This document examines the interoperability angle for personal identity within Solid, providing strict technical as well as looser interpretations of the WebID concept, building upon these to outline the problem space as well as directions for solutions. We discuss the necessity of a shared understanding, and describe challenges including anonymity and pseudonymity, extending the identifier space, and disambiguating different WebIDs and identity providers pertaining to the same end-users. We thereby provide a blueprint for the work needed to mature the Solid ecosystem with regard to identity.
+
+Speaker: Ines Akaichi, Giorgos Flouris, Irini Fundulaki, Sabrina Kirrane
+Institute for Information Systems and New Media, WU, Vienna, Austria
+Foundation for Research and Technology, Crete, Greece
+Title: A Semantic Policy Language for Usage Control
+
+Abstract: Growing dynamic and distributed environments, such as the web or IoT-based data sharing systems, pose new challenges in terms of unpredictability and dynamicity, which require tools that offer fine-grained and continuous protection of digital assets. Usage control is a powerful approach to ensure compliance with data protection, copyright and institutional policies. Despite considerable progress in specifying and enforcing access control policies, most current solutions to enforcing usage control lack support for automated compliance checking. This is usually attributed to the fact that their policy languages lack underlying formal semantics. Usage control policies cover who can access what data (permissions and prohibitions), but also how data may or may not be used after access has been granted (obligations and dispensations), under which conditions. At present, there exists a limited number of logic-based usage control policy languages that aim to provide support for either conditional permissions or obligations with support for limited types of conditions. Given that formal semantics are needed to account for the unpredictability and dynamics of distributed environments by ensuring policy consistency and continuous compliance, our work focuses on developing a flexible and general logic-based policy language for usage control. Our language is based on deontic conditional rules, which allows various usage control requirements to be described in terms of permissions, prohibitions, obligations, dispensations, and various related usage conditions that are encountered in usage control scenarios.
+
+
+19:00 dinner: Madegra, Piazza della Concordia, 35, 84123 Salerno SA
+
+<https://www.google.com/maps/dir/40.7747822,14.7892919/Madegra,+Piazza+della+Concordia,+35,+84123+Salerno+SA/@40.7245336,14.7453843,13z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x133bc2396e7f1d33:0x379dab45f0f710c7!2m2!1d14.7706441!2d40.6738638!3e3>
+
+ 
+
+
+
+
+
+#### Wednesday 15 February (collaboration & broadcast):
+
+9:30-11:00: Parallel session for paper and proposal collaborations, chairs TBC
+
+11:00-10:30: second breakfast
+
+11:30-13:00: Broadcast of workshop outcomes, chair Ross Horne
+
+12:30-14:00: lunch
+
+14:30-18:00: Pompeii
+
 
 """ .
+
+:lessons-learnt-in-dkg-projects
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:url "#";
+    schema:name "Lessons Learnt in DKG projects" ;
+    schema:startDate "2023-01-26T09:00:00+01:00" .
+
+:solid-symposium
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Solid Symposium" ;
+    schema:startDate "2023-03-30T09:00:00+02:00" ;
+    schema:url "https://solid.ti.rw.fau.de/public/2023/solid-symposium/" ;
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Nuremberg" ;
+                                        schema:addressCountry  "Germany" ] ] .
+
+:metadata-for-federated-query-processing-in-distributed-knowledge-graphs
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Metadata for Federated Query Processing in Distributed Knowledge Graphs" ;
+    schema:url "#";
+    schema:startDate "2023-04-25T09:00:00+02:00" ;
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Izmir" ;
+                                        schema:addressCountry  "Turkey" ] ] .
+
+:plenary-gp3-meeting
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "Plenary GP3 Meeting" ;
+    schema:startDate "2023-09-25T09:00:00+02:00" ;
+    schema:url "#";
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Málaga" ;
+                                        schema:addressCountry  "Spain" ] ] .
+
+
 
