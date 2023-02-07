@@ -19,25 +19,38 @@ block content
         div.col-10
             h2 About
             div !{workshop[0].about}
+            br
+            br
 
     div.row.justify-content-center
         div.col-10
             h2 Travel Guide
-            div !{workshop[0].travel_info}
+            div !{workshop[0].travel}
+            br
+            br
 
     div.row.justify-content-center
         div.col-10
             h2 Journal Issue
-            div !{workshop[0].journal_issue}
+            div !{workshop[0].journalIssue}
+            br
+            br
 
     div.row.justify-content-center
         div.col-10
             h2 Schedule
             div !{workshop[0].plan}
+            br
+            br
 
     div.row.justify-content-center
         div.col-10
-            h3 Committee Members
-            ul
-              each member in workshop[0].committee_member
-                li #{member.name} (#{member.affiliation.name})
+            h2 Committee Members
+            div !{workshop[0].committee}
+
+    //- div.row.justify-content-center
+    //-     div.col-10
+    //-         h3 Committee Members
+    //-         ul
+    //-           each cmember in workshop[0].committee_member
+    //-             li #{cmember.name} (#{cmember.affiliation.name})
