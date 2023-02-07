@@ -28,17 +28,29 @@ module.exports = {
       if (workshop.action) {
         workshop.action = render(workshop.action);
       }
+    }
 
-      if (workshop.journal_issue) {
-        workshop.journal_issue = render(workshop.journal_issue);
+    if (data.data.length > 0 && data.data[0].name && data.data[0].travel && data.data[0].name.toLowerCase().includes('workshop')) {
+      const workshop = data.data[0];
+
+      if (workshop.about) {
+        workshop.about = render(workshop.about);
       }
 
-      if (workshop.travel_info) {
-        workshop.travel_info = render(workshop.travel_info);
+      if (workshop.plan) {
+        workshop.plan = render(workshop.plan);
       }
 
-      if (workshop.committee_member) {
-        workshop.committee_member = render(workshop.committee_member);
+      if (workshop.journalIssue) {
+        workshop.journalIssue = render(workshop.journalIssue);
+      }
+
+      if (workshop.travel) {
+        workshop.travel = render(workshop.travel);
+      }
+
+      if (workshop.committee) {
+        workshop.committee = render(workshop.committee);
       }
     }
 
