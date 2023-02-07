@@ -30,6 +30,30 @@ module.exports = {
       }
     }
 
+    if (data.data.length > 0 && data.data[0].name && data.data[0].travel && data.data[0].name.toLowerCase().includes('workshop')) {
+      const workshop = data.data[0];
+
+      if (workshop.about) {
+        workshop.about = render(workshop.about);
+      }
+
+      if (workshop.plan) {
+        workshop.plan = render(workshop.plan);
+      }
+
+      if (workshop.journalIssue) {
+        workshop.journalIssue = render(workshop.journalIssue);
+      }
+
+      if (workshop.travel) {
+        workshop.travel = render(workshop.travel);
+      }
+
+      if (workshop.committee) {
+        workshop.committee = render(workshop.committee);
+      }
+    }
+
     return data;
   }
 };

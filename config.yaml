@@ -480,6 +480,90 @@ paths:
       x-walder-postprocessing:
         formatEventDates:
           source: utils.js
+  /pidskg23:
+    get:
+      summary: Second COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs PIDSKG’23
+      responses:
+        200:
+          description: Information about COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs (PIDSKG)
+          x-walder-input-text/html: pidskg23.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          workshop: >
+            {
+              type (_:Workshop)
+              name @single
+              start @single
+              committee @single
+              end @single
+              about @single
+              journalIssue @single
+              travel @single
+              plan @single
+              location @single {
+                name @single
+                address @single {
+                  streetAddress @single
+                  postalCode @single
+                  addressLocality @single
+                  addressCountry @single
+                }
+              }
+              cmember {
+                name @single
+                affiliation @single {
+                  name @single
+                }
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "pb": "http://pbcore.org/pbcore-controlled-vocabularies/creatorrole-and-contributorrole-vocabulary/#",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
+            "Workshop": "swc:WorkshopEvent",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "travel": "ex:travel",
+            "cmember": "ex:cmember",
+            "committee": "ex:committee",
+            "plan": "ex:plan",
+            "journalIssue": "ex:journalIssue",
+            "address": "schema:address",
+            "streetAddress": "schema:streetAddress",
+            "postalCode": "schema:postalCode",
+            "addressLocality": "schema:addressLocality",
+            "addressCountry": "schema:addressCountry",
+            "location": "schema:location",
+            "home": "schema:homeLocation",
+            "affiliation": "schema:affiliation",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+      x-walder-postprocessing:
+        formatStartDateTalksAndPanel:
+          source: utils.js
+        markdownWorkshop:
+          source: markdown.js
 x-walder-errors:
   404:
     description: Page not found

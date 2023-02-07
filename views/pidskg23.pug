@@ -1,0 +1,56 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/main.css")
+    link(rel="stylesheet", href="/style/talks.css")
+
+block content
+    div.row.justify-content-center.panel
+        div.col-10
+            h1 #{workshop[0].name}
+
+    div.row.justify-content-center
+        div.col-10
+            p Start: #{workshop[0].start}
+            p End: #{workshop[0].end}
+            p Location: #{workshop[0].location.address.streetAddress}, #{workshop[0].location.address.postalCode}, #{workshop[0].location.address.addressLocality}, #{workshop[0].location.address.addressCountry}
+
+    div.row.justify-content-center
+        div.col-10
+            h2 About
+            div !{workshop[0].about}
+            br
+            br
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Travel Guide
+            div !{workshop[0].travel}
+            br
+            br
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Journal Issue
+            div !{workshop[0].journalIssue}
+            br
+            br
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Schedule
+            div !{workshop[0].plan}
+            br
+            br
+
+    div.row.justify-content-center
+        div.col-10
+            h2 Committee Members
+            div !{workshop[0].committee}
+
+    //- div.row.justify-content-center
+    //-     div.col-10
+    //-         h3 Committee Members
+    //-         ul
+    //-           each cmember in workshop[0].committee_member
+    //-             li #{cmember.name} (#{cmember.affiliation.name})
