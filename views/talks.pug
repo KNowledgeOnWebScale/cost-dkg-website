@@ -18,17 +18,24 @@ block content
             ul
               each talk in talks
                   li.event
-                    h3 #{talk.actor.fName}: "#{talk.name}" (#{talk.actor.about})
+                    if talk.name
+                        h3 #{talk.actor.fName}: "#{talk.name}"
+                            if talk.actor.about
+                                span  (#{talk.actor.about})
+                    else
+                        h3 Talk by #{talk.actor.fName}
                     ul
                         - var start = (new Date(talk.start))
                         li When: #{talk.start}
-                        if talk.location
+                        if talk.location && talk.location.url
                             li
                                 span Where:&nbsp;
                                 a(href=talk.location.url)
                                     span #{talk.location.name}
-                        li About the speaker: #{talk.actor.description}
-                        li About the talk: #{talk.about}
+                        if talk.actor.description
+                            li About the speaker: #{talk.actor.description}
+                        if talk.about
+                            li About the talk: #{talk.about}
               li.event
                 h3 SWSA Panel "#{panel[0].name}"
                 ul
