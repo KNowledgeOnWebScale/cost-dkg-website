@@ -16,6 +16,7 @@
     a                schema:Event ;
     schema:name      "KnowGraphs Winter School 2023" ;
     schema:startDate "2023-03-07T09:00:00+01:00" ;
+    schema:endDate "2023-03-09T17:00:00+01:00" ;
     schema:url       "https://knowgraphs.eu/ws2023/".
 
 :endorse-knowsgraphs-winter-school
@@ -27,9 +28,34 @@
     a                schema:Event ;
     schema:name      "International Semantic Web Research Summer School" ;
     schema:startDate "2023-06-11T09:00:00+02:00" ;
+    schema:endDate "2023-06-17T17:00:00+02:00" ;
     schema:url       "https://2023.semanticwebschool.org/".
 
 :endorse-iswr-summer-school
     a schema:EndorseAction;
     schema:endorsee :;
     schema:object :iswr-summer-school.
+
+:dagstuhl-semiar-23081
+    a                schema:Event ;
+    schema:name      "Dagstuhl Seminar 23081: Agents on the Web" ;
+    schema:startDate "2023-02-19T09:00:00+01:00" ;
+    schema:endDate "2023-02-24T17:00:00+01:00" ;
+    schema:url       "https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23081".
+
+:endorse-dagstuhl-semiar-23081
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :dagstuhl-semiar-23081.
+
+:dagstuhl-semiar-24061
+    a                schema:Event ;
+    schema:name      "Dagstuhl Seminar 24061: Are Knowledge Graphs Ready for the Real World? Challenges and Perspective" ;
+    schema:startDate "2024-02-04T09:00:00+01:00" ;
+    schema:endDate "2024-02-09T17:00:00+01:00" ;
+    schema:url       "https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/24061".
+
+:endorse-dagstuhl-semiar-24061
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :dagstuhl-semiar-24061.
