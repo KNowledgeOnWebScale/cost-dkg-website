@@ -537,17 +537,6 @@ Social activity: The High Furnaces & Exhibitions at Belval
     schema:endDate   "2022-05-29T17:30:00+02:00" ;
     schema:url       "https://kg-construct.github.io/eswc-dkg-tutorial-2022/".
 
-:guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them
-    a                schema:Event ;
-    schema:name      "Guest Talk: Frank van Harmelen \"Hybrid Intelligence: AI systems that collaborate with people instead of replacing them\"" ;
-    schema:startDate "2022-09-01T16:00:00+02:00" ;
-    schema:url       "https://www.wu.ac.at/en/dpkm/news-details/detail/guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them/".
-
-:endorse-guest-talk-frank-van-harmelen-2022
-    a schema:EndorseAction;
-    schema:endorsee :;
-    schema:object :guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them.
-
 
 :gp2-plenary-meeting
     a                                                                              schema:Event ;

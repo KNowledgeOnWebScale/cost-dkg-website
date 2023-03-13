@@ -4,6 +4,7 @@ info:
   version: 1.0.0
 x-walder-datasources:
   - http://localhost:3000/data.ttl
+  - http://localhost:3000/endorsed.ttl
   - https://natadimou.com/#me
 paths:
   /:

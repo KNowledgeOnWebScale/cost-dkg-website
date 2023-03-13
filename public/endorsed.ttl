@@ -1,0 +1,35 @@
+@prefix schema:  <http://schema.org/> .
+@prefix :        <http://dkg.com/> .
+
+:guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them
+    a                schema:Event ;
+    schema:name      "Guest Talk: Frank van Harmelen \"Hybrid Intelligence: AI systems that collaborate with people instead of replacing them\"" ;
+    schema:startDate "2022-09-01T16:00:00+02:00" ;
+    schema:url       "https://www.wu.ac.at/en/dpkm/news-details/detail/guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them/".
+
+:endorse-guest-talk-frank-van-harmelen-2022
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them.
+
+:knowsgraphs-winter-school
+    a                schema:Event ;
+    schema:name      "KnowGraphs Winter School 2023" ;
+    schema:startDate "2023-03-07T09:00:00+01:00" ;
+    schema:url       "https://knowgraphs.eu/ws2023/".
+
+:endorse-knowsgraphs-winter-school
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :knowsgraphs-winter-school.
+
+:iswr-summer-school
+    a                schema:Event ;
+    schema:name      "International Semantic Web Research Summer School" ;
+    schema:startDate "2023-06-11T09:00:00+02:00" ;
+    schema:url       "https://2023.semanticwebschool.org/".
+
+:endorse-iswr-summer-school
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :iswr-summer-school.
