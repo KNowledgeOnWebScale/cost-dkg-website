@@ -59,3 +59,39 @@
     a schema:EndorseAction;
     schema:endorsee :;
     schema:object :dagstuhl-semiar-24061.
+
+:salld-3
+    a                schema:Event ;
+    schema:name      "SALLD-3 – Sentiment Analysis and Linguistic Linked Data" ;
+    schema:startDate "2023-09-13T09:00:00+02:00" ;
+    schema:endDate "2023-09-13T17:00:00+02:00" ;
+    schema:url       "https://www.salld.org/salld-3/".
+
+:endorse-salld-3
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :salld-3.
+
+:4lr
+    a                schema:Event ;
+    schema:name      "4LR – Linking Lexicographic and Language Learning Data" ;
+    schema:startDate "2023-09-13T09:00:00+02:00" ;
+    schema:endDate "2023-09-13T17:00:00+02:00" ;
+    schema:url       "https://lexicala.com/4lr/".
+
+:endorse-4lr
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :4lr.
+
+:nlp4kgc-workshop
+    a                schema:Event ;
+    schema:name      "NLP4KGC: 1st International Workshop on Natural Language Processing for Knowledge Graph Creation" ;
+    schema:startDate "2023-04-30T09:00:00-06:00" ;
+    schema:endDate "2023-05-04T17:00:00-06:00" ;
+    schema:url       "https://sites.google.com/view/nlp4kg".
+
+:endorse-nlp4kgc-workshop
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :nlp4kgc-workshop.
