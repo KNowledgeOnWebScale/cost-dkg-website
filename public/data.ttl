@@ -638,7 +638,7 @@ This workshop will place an emphasis on discussing a potential policy layer enha
                                                             "Legal Innovation Lab Wales" ] ],
                             [ schema:name        "Arianna Rossi" ;
                                 schema:affiliation [ schema:name
-                                                            "University of Luxembourg" ] ]; 
+                                                            "University of Luxembourg" ] ];
 
     ex:committee """
 Inès Akaichi, Vienna university of Economics and Business, Austria\n
@@ -652,7 +652,7 @@ Chang Sun, Maastricht University, Netherlands\n
 Livio Robaldo, Legal Innovation Lab Wales, Swansea University, UK\n
 Arianna Rossi, University of Luxembourg, Luxembourg\n
 
-    """;                                        
+    """;
 
     ex:travel                                                                """
 We will hold our workshop on our university campus (building F2 - <https://web.unisa.it/vivere-il-campus/unisa-experience/campus-map>). The nearest hotel is <https://www.hoteldeiprincipati.it/>, on booking website the room rate is 68€. There are hotels in Salerno city, which is connected to the campus with a bus line (number 17). Timetable available at <https://www.fsbusitalia.it/content/fsbusitalia/it/campania/orari-e-linee.html>. You can also think of booking a hotel in Napoli, and from the central train station, there is a direct bus to our campus (it takes an hour).
@@ -690,9 +690,9 @@ For full call see:
 Please note that as editors we have agreed with MDPI that fees will be waived for 6 submissions and so cost should not be a barrier to submission for high quality papers. All publications will be open access.
 
     """;
-    
-    
-    
+
+
+
     ex:plan                                                                        """
 #### Monday 13 February 2023 (short papers):
 
@@ -720,7 +720,7 @@ Chair: Beatriz Esteves
 
 Speaker: Anastasia Dimou, KU Leuven
 Title: Interpreting access control policies in raw data as access control policies for the RDF graph
-Abstract: To support real-world applications with knowledge graphs based on Solid or Semantic Web technologies in general, suitable access control needs to be in place. Different access control models, policies and enforcement frameworks were proposed in the past. Different models which were originally proposed for raw data, were also applied to RDF graphs, such as the Discretionary Access Control (DAC), Mandatory Access Control (MAC), Role- Based Access Control (RBAC), Attribute-Based Access Control (ABAC) or View-Based Access Control (VBAC). Different languages were proposed as well to describe policies, e.g., the Open Digital Rights Language (ODRL), the eXtensible Access Control Markup Language (XACML) and the DAML+OIL, accompanied by corresponding enforcement frameworks, such as the XACML engine to enforce the policies described with XACML and DQL queries for DAML+OIL query patterns. In particular in the case of Solid, the Access Control List (ACL) model was considered, enforced with Web Access Control, and the Access Control Policy (ACP). 
+Abstract: To support real-world applications with knowledge graphs based on Solid or Semantic Web technologies in general, suitable access control needs to be in place. Different access control models, policies and enforcement frameworks were proposed in the past. Different models which were originally proposed for raw data, were also applied to RDF graphs, such as the Discretionary Access Control (DAC), Mandatory Access Control (MAC), Role- Based Access Control (RBAC), Attribute-Based Access Control (ABAC) or View-Based Access Control (VBAC). Different languages were proposed as well to describe policies, e.g., the Open Digital Rights Language (ODRL), the eXtensible Access Control Markup Language (XACML) and the DAML+OIL, accompanied by corresponding enforcement frameworks, such as the XACML engine to enforce the policies described with XACML and DQL queries for DAML+OIL query patterns. In particular in the case of Solid, the Access Control List (ACL) model was considered, enforced with Web Access Control, and the Access Control Policy (ACP).
 
 In all cases, the access control policy is defined over the knowledge graph, ignoring any access control policy that holds for the original raw data where the RDF graphs come from. RDF graphs are often constructed from (semi-)structured heterogeneous data such as tabular-structured data, e.g., data in DB's tables or in CSV format, or hierarchical-structured data, e.g., data in XML or JSON format. These data are originally stored in e.g., relational or NoSQL databases, files, Web APIs etc. and are subject to access control policies. When the RDF graph is constructed from e.g., a relational database, the access control policies which are already established, are not transferred to the RDF graph. So far, it was not thoroughly investigated how the access control polices for the raw data can be aligned with access control policies for the RDF graph which were constructed based on this raw data. Only Kiranne in her PhD dissertation discussed a Proof of Concept for a use case where the access control of the database is considered but the solution is not generalizable.
 
@@ -832,7 +832,7 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
 
 <https://www.google.com/maps/dir/40.7747822,14.7892919/Madegra,+Piazza+della+Concordia,+35,+84123+Salerno+SA/@40.7245336,14.7453843,13z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x133bc2396e7f1d33:0x379dab45f0f710c7!2m2!1d14.7706441!2d40.6738638!3e3>
 
- 
+
 
 
 
@@ -899,10 +899,34 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:location  [ a           schema:VirtualLocation ;
                        schema:name "" ;
                        schema:url  ""^^schema:URL ] ;
-    schema:name      "" ;
+    schema:name      "KR and the Semantic Web: What We Did Right (and Wrong)" ;
     schema:actor     [ foaf:name          "Ian Horrocks" ;
                        schema:about "" ;
-                       schema:description """""" ] ;
-    schema:about     """""" ;
+                       schema:description """
+                       Ian Horrocks is a full professor in the Oxford University Department of Computer Science,
+                       a visiting professor in the Department of Informatics at the University of Oslo and a
+                       co-founder of Oxford Semantic Technologies.
+                       He is also a Fellow of the Royal Society, a member of Academia Europaea,
+                       a fellow of the European Association for Artificial Intelligence (EurAI),
+                       a Fellow of the Alan Turing Institute and a British Computer Society Lovelace Medalist.
+                       His research concerns the representation of knowledge, and
+                       the efficient manipulation of such knowledge by computers.
+                       He played a leading role in establishing the Semantic Web as a significant research field,
+                       pioneering many of the underlying logics, algorithms, optimisation techniques, and
+                       reasoning systems.
+                       He has contributed to the development of several widely used reasoning systems including FaCT++,
+                       HermiT, Elk and RDFox. He has published more than 300 papers in
+                       major international conferences and journals, winning best paper prizes at KR-98, AAAI-2010, and
+                       IJCAI-2017, and test of time awards at ISWC-2013, KR-2020 and CADE-2021.
+                       He is one of the UK’s most highly cited computer scientists, with more than 59,000 citations, and an h-index of 99.
+                       """ ] ;
+    schema:about     """
+    Augmenting the web to include some form of Knowledge Representation (KR) was one of the first directions for
+    Semantic Web research and led to the development of the OWL KR language(s) and the SPARQL query language.
+    In this talk I will recall the development of these languages and their genesis in foundational research,
+    highlighting what I believe were the many good design decisions as well as a few not so good.
+    I will then go on to trace the development of KR systems and applications based on these technologies and
+    argue that the this represents a significant success story for Semantic Web research.
+    """ ;
     schema:url       "/talks" ;
     schema:startDate "2023-05-17T18:00:00+02:00" .
