@@ -15,7 +15,7 @@
     ov:twitter-id                                                                                "cost_dkg" ;
     rdfs:see                                                                                     "https://www.cost.eu/actions/CA19134/#tabs+Name:Management%20Structure" ;
     ex:coreMember                                                                                [ foaf:name
-                                                                                                                      "Tobias Kafer" ;
+                                                                                                                      "Tobias Käfer" ;
                                                                                                    foaf:homepage      "https://aifb.kit.edu/index.php/Tobias_K%C3%A4fer/en" ;
                                                                                                    foaf:img           "tkafer.jpg" ;
                                                                                                    ex:role            "Chair" ;
