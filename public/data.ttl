@@ -937,11 +937,11 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:location  [ a           schema:VirtualLocation ;
                        schema:name "" ;
                        schema:url  ""^^schema:URL ] ;
-    schema:name      "" ;
+    schema:name      "Supporting Professional Information Workflows With Knowledge Graphs" ;
     schema:actor     [ foaf:name          "Anupriya Ankolekar" ;
-                       schema:about "" ;
-                       schema:description """""" ] ;
-    schema:about     """""" ;
+                       schema:about "SWSA Ten-Year Award 2011" ;
+                       schema:description """Anupriya Ankolekar is Co-Founder & Principal Scientist at ModuleQ, an enterprise AI startup focussed on empowering knowledge professionals through proactive, mission-critical business intelligence and insights. Prior to ModuleQ, Anupriya was a Principal Research Scientist at Hewlett-Packard Labs in Palo Alto and an Assistant Professor at AIFB Institute, part of Karlsruhe Institute of Technology (KIT) in Germany. She holds a PhD in Human-Computer Interaction from Carnegie Mellon University and a Masters in Computer Science from RWTH Aachen.""" ] ;
+    schema:about     """The vision of agents supporting human tasks and workflows gave rise to the field of Semantic Web, which in turn led to significant developments, such as web ontologies, linked data, semantic web services, and knowledge graphs. In this talk, I'll make the case that supporting information workflows for professional, strategic knowledge work and learning is a valuable application area for knowledge graphs. Professional information workflows are complex, role-dependent and stretch across application and enterprise boundaries. I'll describe examples of such workflows, outline a vision for proactive human-centred AI support for them and describe our approach at ModuleQ inspired by knowledge graphs. Key elements of our approach are explicit representation of professional and organizational priorities, information fusion of work traces across applications, and contextual knowledge to interpret professional work and to proactively identify relevant content and resources. I'll conclude with some of the challenges and open questions for building effective information workflow support.""" ;
     schema:url       "/talks" ;
     schema:startDate "2023-09-05T18:00:00+02:00" .
 
