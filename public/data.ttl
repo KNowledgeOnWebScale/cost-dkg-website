@@ -901,7 +901,7 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
                        schema:url  ""^^schema:URL ] ;
     schema:name      "KR and the Semantic Web: What We Did Right (and Wrong)" ;
     schema:actor     [ foaf:name          "Ian Horrocks" ;
-                       schema:about "" ;
+                       schema:about "SWSA Ten-Year Award 2013" ;
                        schema:description """
                        Ian Horrocks is a full professor in the Oxford University Department of Computer Science,
                        a visiting professor in the Department of Informatics at the University of Oslo and a
