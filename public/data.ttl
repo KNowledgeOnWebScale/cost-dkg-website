@@ -48,16 +48,16 @@
                                                                                                                                 [ schema:addressCountry
                                                                                                                                           "Belgium" ] ] ],
                                                                                                  [ foaf:name
-                                                                                                                      "Charlie Abela" ;
-                                                                                                   foaf:homepage      "https://www.um.edu.mt/profile/charlieabela" ;
-                                                                                                   foaf:img           "cabela.jpg" ;
-                                                                                                   ex:role            "STSM Coordinator" ;
-                                                                                                   ex:country         "Malta" ;
+                                                                                                                      "Stevan Gostojić" ;
+                                                                                                   foaf:homepage      "http://www.ftn.uns.ac.rs/1417834093/stevan-gostojic" ;
+                                                                                                   foaf:img           "sgostojic.jpg" ;
+                                                                                                   ex:role            "Grant Coordinator" ;
+                                                                                                   ex:country         "Serbia" ;
                                                                                                    schema:affiliation [ schema:name
-                                                                                                                                "University of Malta" ;
+                                                                                                                                "University of Novi Sad" ;
                                                                                                                         schema:address
                                                                                                                                 [ schema:addressCountry
-                                                                                                                                          "Malta" ] ] ],
+                                                                                                                                          "Serbia" ] ] ],
                                                                                                  [ foaf:name
                                                                                                                       "Michel Dumontier" ;
                                                                                                    foaf:homepage      "https://www.maastrichtuniversity.nl/michel.dumontier" ;
@@ -69,6 +69,17 @@
                                                                                                                         schema:address
                                                                                                                                 [ schema:addressCountry
                                                                                                                                           "Netherlands" ] ] ],
+                                                                                                 [ foaf:name
+                                                                                                                      "Remzi Celebi" ;
+                                                                                                   foaf:homepage      "https://www.maastrichtuniversity.nl/remzi.celebi" ;
+                                                                                                   foaf:img           "rcelebi.jpg" ;
+                                                                                                   ex:role            "WG1 Co-Lead" ;
+                                                                                                   ex:country         "Netherlands" ;
+																																																	 schema:affiliation [ schema:name
+																																																															 "Institute of Data Science at Maastricht University" ;
+																																																											  schema:address
+																																																															 [ schema:addressCountry
+																																																																				 "Netherlands" ] ] ],
                                                                                                  [ foaf:name
                                                                                                                       "Andreas Harth" ;
                                                                                                    foaf:homepage      "http://harth.org/andreas/" ;
