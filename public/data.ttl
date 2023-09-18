@@ -962,10 +962,38 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:location  [ a           schema:VirtualLocation ;
                        schema:name "" ;
                        schema:url  ""^^schema:URL ] ;
-    schema:name      "" ;
+    schema:name      "Autonomy, the Web and Semantic Web Services" ;
     schema:actor     [ foaf:name          "Terry R. Payne" ;
                        schema:about "" ;
-                       schema:description """""" ] ;
-    schema:about     """""" ;
+                       schema:description """
+                       Terry Payne is a Senior Lecturer in the Department of Computer Science
+                       at the University of Liverpool. He has been active in the area of
+                       agent-based computing and knowledge-based systems and services since
+                       the mid 90ies, and has a specific interest is in the use of ontological
+                       knowledge for the support of autonomous service discovery and
+                       provision. He is actively exploring the use of autonomous approaches
+                       to facilitate the communication and collaboration of heterogeneous
+                       systems, using a variety of cross-disciplinary approaches. This
+                       supports the longer term aim of describing, discovering and utilising
+                       autonomous devices and services in a variety of settings, including
+                       life sciences and laboratory environments.
+                       """ ] ;
+    schema:about     """
+    One of the early visions of Agent based Computing was the goal of
+    bringing multiple systems together serendipitously, and have complex
+    behaviour emerge as a consequence of their co-existence, driven by user
+    goals or external events (for example, in the case of RoboCupRescue,
+    which was inspired by the 1995 Kobe Earthquake). Whilst syntactic
+    interoperability has been addressed through a plethora of (primarily
+    web-based) standards; semantic interoperability remained a key
+    challenge. When Darpa announced DAML, the DARPA Agent Markup Language
+    (which later evolved into OWL), there was a keen desire to explore how
+    services themselves could be modelled through ontologies. In this talk
+    I’ll look back at the early days of Semantic Web Services, including
+    the evolution of DAML-S and its successor, OWL-S, and reflect on how
+    they were viewed from different perspectives. The talk will then
+    provide a view on emerging opportunities for Autonomy and the use of
+    services, from today’s Semantic Web and Knowledge Graph perspective.
+    """ ;
     schema:url       "/talks" ;
     schema:startDate "2023-10-04T18:00:00+02:00" .
