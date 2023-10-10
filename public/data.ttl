@@ -997,3 +997,45 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     """ ;
     schema:url       "/talks" ;
     schema:startDate "2023-10-04T18:00:00+02:00" .
+
+:talk-mayank-kejriwal
+    a                schema:Event, swc:TalkEvent ;
+    schema:organizer : ;
+    schema:location  [ a           schema:VirtualLocation ;
+                       schema:name "" ;
+                       schema:url  ""^^schema:URL ] ;
+    schema:name      "Neurosymbolic Approaches for Robust Domain-Specific Semantic Search: Current Progress and Future Opportunities" ;
+    schema:actor     [ foaf:name          "Mayank Kejriwal" ;
+                       schema:about "University of Southern California" ;
+                       schema:description """
+Mayank Kejriwal is a research assistant professor in the Department of
+Industrial & Systems Engineering at the University of Southern
+California (USC), and a principal scientist in the USC Information
+Sciences Institute. Prior to joining USC, he received his PhD in
+computer science from the University of Texas at Austin. His PhD thesis
+was awarded the SWSA Dissertation Award in 2017. At USC, he is the
+director of the Artificial Intelligence and Complex Systems group, and
+is also affiliated with the Center on Knowledge Graphs and theAI4Health
+initiative. His research has been published in international venues
+such as ISWC, ESWC, Semantic Web Journal, Royal Society Open Science,
+and several others. He is the author of four books, including an MIT
+Press textbook on knowledge graphs that has been republished in several
+languages.
+                       """ ] ;
+    schema:about     """
+With the advent of large language models (LLMs), previous state-of-the-
+art performance has been exceeded on a number of difficult challenges
+in the AI community, including commonsense reasoning, question
+answering (and other rich forms of information retrieval), text
+summarization, and computational creativity. Knowledge graphs have been
+used to address some of these problems before. This talk will address
+the question of whether, and how, knowledge graphs and LLMs can be used
+synergistically in an important application in both industry and the
+Semantic Web: domain-specific search. My thesis is that a neurosymbolic
+approach can allow us to use the 'best of both worlds' in tackling this
+challenging problem in a robust manner. I will discuss current progress
+in this area in both my research group, and others, and outline the key
+challenges and future opportunities still outstanding in this area.
+    """ ;
+    schema:url       "/talks" ;
+    schema:startDate "2023-12-07T18:00:00+01:00" .
