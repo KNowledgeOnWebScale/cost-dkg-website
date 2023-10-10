@@ -95,3 +95,15 @@
     a schema:EndorseAction;
     schema:endorsee :;
     schema:object :nlp4kgc-workshop.
+
+:ai-enabled-information-systems
+    a                schema:Event ;
+    schema:name      "AI-enabled information systems" ;
+    schema:startDate "2023-12-21T09:00:00+01:00" ;
+    schema:endDate "2023-12-23T17:00:00+01:00" ;
+    schema:url       "http://aieissession.alwaysdata.net/".
+
+:endorse-ai-enabled-information-systems
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :ai-enabled-information-systems.
