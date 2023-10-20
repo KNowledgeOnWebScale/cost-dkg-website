@@ -1039,3 +1039,17 @@ challenges and future opportunities still outstanding in this area.
     """ ;
     schema:url       "/talks" ;
     schema:startDate "2023-12-07T18:00:00+01:00" .
+
+:talk-mark-a-musen
+    a                schema:Event, swc:TalkEvent ;
+    schema:organizer : ;
+    schema:location  [ a           schema:VirtualLocation ;
+                       schema:name "" ;
+                       schema:url  ""^^schema:URL ] ;
+    schema:name      "Semantic Technology in Science: Enhancing Data Stewardship in Support of New Discovery" ;
+    schema:actor     [ foaf:name          "Mark A. Musen" ;
+                       schema:about "Stanford University" ;
+                       schema:description """""" ] ;
+    schema:about     """""" ;
+    schema:url       "/talks" ;
+    schema:startDate "2024-03-04T18:00:00+01:00" .
