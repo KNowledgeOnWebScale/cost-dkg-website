@@ -21,6 +21,23 @@ module.exports = {
         const originalData = queryResults.data[0];
         let events = originalData.organises || [];
 
+        events.sort((a, b) => {
+            const aDate = a.start ? (new Date(a.start)).getTime() : undefined;
+            const bDate = b.start ? (new Date(b.start)).getTime() : undefined;
+
+            if (!aDate) {
+                return 1;
+            } else if (!bDate) {
+                return -1;
+            } else if (aDate < bDate) {
+                return -1;
+            } else if (aDate > bDate) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+
         events = events.filter(event => new Date() < new Date(event.start));
         formatEventDates(events);
 
@@ -54,6 +71,23 @@ module.exports = {
     },
     formatStartDateTalksAndPanel: (data) => {
         if (data.data.length > 0) {
+            data.data.sort((a, b) => {
+                const aDate = a.start ? (new Date(a.start)).getTime() : undefined;
+                const bDate = b.start ? (new Date(b.start)).getTime() : undefined;
+
+                if (!aDate) {
+                    return -1;
+                } else if (!bDate) {
+                    return 1;
+                } else if (aDate < bDate) {
+                    return 1;
+                } else if (aDate > bDate) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            });
+
             data.data.forEach(event => {
                 console.log(event);
                 function formatDate(date) {
@@ -73,23 +107,6 @@ module.exports = {
                 }
             });
         }
-
-        data.data.sort((a, b) => {
-            const aDate = a.start ? (new Date(a.start)).getTime() : undefined;
-            const bDate = b.start ? (new Date(b.start)).getTime() : undefined;
-
-            if (!aDate) {
-                return -1;
-            } else if (!bDate) {
-                return 1;
-            } else if (aDate < bDate) {
-                return 1;
-            } else if (aDate > bDate) {
-                return -1;
-            } else {
-                return 0;
-            }
-        });
 
         return data;
     }

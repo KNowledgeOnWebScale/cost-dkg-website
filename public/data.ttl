@@ -1053,3 +1053,17 @@ challenges and future opportunities still outstanding in this area.
     schema:about     """""" ;
     schema:url       "/talks" ;
     schema:startDate "2024-03-04T18:00:00+01:00" .
+
+:talk-ilaria-tiddi
+    a                schema:Event, swc:TalkEvent ;
+    schema:organizer : ;
+    schema:location  [ a           schema:VirtualLocation ;
+                       schema:name "" ;
+                       schema:url  ""^^schema:URL ] ;
+    schema:name      "Explainability with Knowledge Graphs: what have we learnt?" ;
+    schema:actor     [ foaf:name          "Ilaria Tiddi" ;
+                       schema:about "Vrije Universiteit Amsterdam" ;
+                       schema:description """""" ] ;
+    schema:about     """""" ;
+    schema:url       "/talks" ;
+    schema:startDate "2024-01-17T18:00:00+01:00" .
