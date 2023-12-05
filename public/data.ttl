@@ -1067,3 +1067,17 @@ challenges and future opportunities still outstanding in this area.
     schema:about     """""" ;
     schema:url       "/talks" ;
     schema:startDate "2024-01-17T18:00:00+01:00" .
+
+:talk-peter-f-patel-schneider
+    a                schema:Event, swc:TalkEvent ;
+    schema:organizer : ;
+    schema:location  [ a           schema:VirtualLocation ;
+                       schema:name "" ;
+                       schema:url  ""^^schema:URL ] ;
+    schema:name      "" ;
+    schema:actor     [ foaf:name          "Peter F. Patel-Schneider" ;
+                       schema:about "" ;
+                       schema:description """""" ] ;
+    schema:about     """""" ;
+    schema:url       "/talks" ;
+    schema:startDate "2024-04-17T18:00:00+02:00" .
