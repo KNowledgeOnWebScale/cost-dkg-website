@@ -243,7 +243,8 @@ logical representation for data and semantics, and the promise of
 Semantic Web is that it could be this representation.
 		    """ ;
     schema:url       "/talks" ;
-    schema:startDate "2021-12-07T18:00:00+01:00" .
+    schema:startDate "2021-12-07T18:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1638896400"^^schema:URL.
 
 :talk-olfa-hartig
     a                schema:Event, swc:TalkEvent ;
@@ -273,7 +274,8 @@ decentralized data architectures. In this talk I will reflect on these earlier i
 need to be addressed in order to carry these ideas forward.
     """ ;
     schema:url       "/talks" ;
-    schema:startDate "2022-03-07T18:00:00+01:00" .
+    schema:startDate "2022-03-07T18:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1646668800"^^schema:URL.
 
 :metadata4dkg2022
     a                schema:Event, swc:WorkshopEvent ;
@@ -282,7 +284,8 @@ need to be addressed in order to carry these ideas forward.
     schema:url       "https://cost-dkg.github.io/metadata4dkg2022/" ;
     schema:location  "Lyon, France and online." ;
     schema:organizer : ;
-    schema:name      "Workshop on Metadata Authoring for Distributed Knowledge Graphs" .
+    schema:name      "Workshop on Metadata Authoring for Distributed Knowledge Graphs" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1652864400"^^schema:URL.
 
 :workshop-pidskg
     a                                                                              swc:WorkshopEvent ;
@@ -546,7 +549,8 @@ Social activity: The High Furnaces & Exhibitions at Belval
     schema:name      "KGC Tutorial 2022" ;
     schema:startDate "2022-05-29T09:00:00+02:00" ;
     schema:endDate   "2022-05-29T17:30:00+02:00" ;
-    schema:url       "https://kg-construct.github.io/eswc-dkg-tutorial-2022/".
+    schema:url       "https://kg-construct.github.io/eswc-dkg-tutorial-2022/";
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1653804000"^^schema:URL.
 
 
 :gp2-plenary-meeting
@@ -561,7 +565,8 @@ Social activity: The High Furnaces & Exhibitions at Belval
                        schema:url "https://www.sztaki.hu/";
                        schema:address [ a                      schema:PostalAddress ;
                                         schema:addressLocality "Budapest" ;
-                                        schema:addressCountry  "Hungary" ] ] .
+                                        schema:addressCountry  "Hungary" ] ] ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1665730800"^^schema:URL.
 
 :dkg-plenary-2021
     a                schema:Event ;
@@ -573,7 +578,8 @@ Social activity: The High Furnaces & Exhibitions at Belval
     schema:location  [ a              schema:Place ;
                                             schema:address [ a                      schema:PostalAddress ;
                                                              schema:addressLocality "Amsterdam" ;
-                                                             schema:addressCountry  "The Netherlands" ] ] .
+                                                             schema:addressCountry  "The Netherlands" ] ] ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1631080800"^^schema:URL.
 
 
 :workshop-pidskg23
@@ -869,7 +875,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:organizer : ;
     schema:url "#";
     schema:name "Lessons Learnt in DKG projects" ;
-    schema:startDate "2023-01-26T09:00:00+01:00" .
+    schema:startDate "2023-01-26T09:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1674720000"^^schema:URL.
 
 :solid-symposium
     a                                                                              schema:Event ;
@@ -880,7 +887,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:location  [ a              schema:Place ;
                        schema:address [ a                      schema:PostalAddress ;
                                         schema:addressLocality "Nuremberg" ;
-                                        schema:addressCountry  "Germany" ] ] .
+                                        schema:addressCountry  "Germany" ] ] ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1680156000"^^schema:URL.
 
 :metadata-for-federated-query-processing-in-distributed-knowledge-graphs
     a                                                                              schema:Event ;
@@ -891,7 +899,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:location  [ a              schema:Place ;
                        schema:address [ a                      schema:PostalAddress ;
                                         schema:addressLocality "Izmir" ;
-                                        schema:addressCountry  "Turkey" ] ] .
+                                        schema:addressCountry  "Turkey" ] ] ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1682402400"^^schema:URL.
 
 :plenary-gp3-meeting
     a                                                                              schema:Event ;
@@ -902,7 +911,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     schema:location  [ a              schema:Place ;
                        schema:address [ a                      schema:PostalAddress ;
                                         schema:addressLocality "Málaga" ;
-                                        schema:addressCountry  "Spain" ] ] .
+                                        schema:addressCountry  "Spain" ] ] ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1695621600"^^schema:URL.
 
 :talk-ian-horrocks
     a                schema:Event, swc:TalkEvent ;
@@ -940,7 +950,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     argue that the this represents a significant success story for Semantic Web research.
     """ ;
     schema:url       "/talks" ;
-    schema:startDate "2023-05-17T18:00:00+02:00" .
+    schema:startDate "2023-05-17T18:00:00+02:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1684335600"^^schema:URL.
 
 :talk-anupriya-ankolekar
     a                schema:Event, swc:TalkEvent ;
@@ -954,7 +965,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
                        schema:description """Anupriya Ankolekar is Co-Founder & Principal Scientist at ModuleQ, an enterprise AI startup focussed on empowering knowledge professionals through proactive, mission-critical business intelligence and insights. Prior to ModuleQ, Anupriya was a Principal Research Scientist at Hewlett-Packard Labs in Palo Alto and an Assistant Professor at AIFB Institute, part of Karlsruhe Institute of Technology (KIT) in Germany. She holds a PhD in Human-Computer Interaction from Carnegie Mellon University and a Masters in Computer Science from RWTH Aachen.""" ] ;
     schema:about     """The vision of agents supporting human tasks and workflows gave rise to the field of Semantic Web, which in turn led to significant developments, such as web ontologies, linked data, semantic web services, and knowledge graphs. In this talk, I'll make the case that supporting information workflows for professional, strategic knowledge work and learning is a valuable application area for knowledge graphs. Professional information workflows are complex, role-dependent and stretch across application and enterprise boundaries. I'll describe examples of such workflows, outline a vision for proactive human-centred AI support for them and describe our approach at ModuleQ inspired by knowledge graphs. Key elements of our approach are explicit representation of professional and organizational priorities, information fusion of work traces across applications, and contextual knowledge to interpret professional work and to proactively identify relevant content and resources. I'll conclude with some of the challenges and open questions for building effective information workflow support.""" ;
     schema:url       "/talks" ;
-    schema:startDate "2023-09-05T18:00:00+02:00" .
+    schema:startDate "2023-09-05T18:00:00+02:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1693926000"^^schema:URL.
 
 :talk-terry-t-payne
     a                schema:Event, swc:TalkEvent ;
@@ -996,7 +1008,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     services, from today’s Semantic Web and Knowledge Graph perspective.
     """ ;
     schema:url       "/talks" ;
-    schema:startDate "2023-10-04T18:00:00+02:00" .
+    schema:startDate "2023-10-04T18:00:00+02:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1696431600"^^schema:URL.
 
 :talk-mayank-kejriwal
     a                schema:Event, swc:TalkEvent ;
@@ -1038,7 +1051,8 @@ in this area in both my research group, and others, and outline the key
 challenges and future opportunities still outstanding in this area.
     """ ;
     schema:url       "/talks" ;
-    schema:startDate "2023-12-07T18:00:00+01:00" .
+    schema:startDate "2023-12-07T18:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1701968400"^^schema:URL.
 
 :talk-mark-a-musen
     a                schema:Event, swc:TalkEvent ;
@@ -1052,7 +1066,8 @@ challenges and future opportunities still outstanding in this area.
                        schema:description """""" ] ;
     schema:about     """""" ;
     schema:url       "/talks" ;
-    schema:startDate "2024-03-04T18:00:00+01:00" .
+    schema:startDate "2024-03-04T18:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1709571600"^^schema:URL.
 
 :talk-ilaria-tiddi
     a                schema:Event, swc:TalkEvent ;
@@ -1066,7 +1081,8 @@ challenges and future opportunities still outstanding in this area.
                        schema:description """""" ] ;
     schema:about     """""" ;
     schema:url       "/talks" ;
-    schema:startDate "2024-01-17T18:00:00+01:00" .
+    schema:startDate "2024-01-17T18:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1705510800"^^schema:URL.
 
 :talk-peter-f-patel-schneider
     a                schema:Event, swc:TalkEvent ;
@@ -1080,4 +1096,5 @@ challenges and future opportunities still outstanding in this area.
                        schema:description """""" ] ;
     schema:about     """""" ;
     schema:url       "/talks" ;
-    schema:startDate "2024-04-17T18:00:00+02:00" .
+    schema:startDate "2024-04-17T18:00:00+02:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1713366000"^^schema:URL.

@@ -13,11 +13,50 @@ block content
 
     - var panelist = panel[0].panelist.map(a => a.fName).join(', ');
 
+    table
+        tr
+        th Title
+        th Date 
+        th Link
+        th Speaker
+
+
+        each talk in talks 
+            
+            tr
+            td
+                if talk.name
+                    a(href="#" + talk.name)= talk.name
+                else
+                    | (Not yet announced)
+            td 
+                - var slashIndex = talk.start.indexOf('/');
+                = slashIndex !== -1 ? talk.start.slice(0, slashIndex) : talk.start
+                if talk.tzStamp
+                    br 
+                    a(href=talk.tzStamp,target='_blank') View in Local Time
+            td 
+                if talk.location.url
+                    a(href=talk.location.url, target='_blank')= talk.location.name
+                else
+                    | (Not yet announced)
+
+            td 
+                if talk.actor.fName
+                    span  #{talk.actor.fName}
+                else
+                    | (Not yet announced)
+
+                
+    br 
+    br 
+    br
+
     div.row.justify-content-center
         div.col-10
             ul
               each talk in talks
-                  li.event
+                  li.event(id=talk.name)
                     if talk.name
                         h3 #{talk.actor.fName}: "#{talk.name}"
                             if talk.actor.about
