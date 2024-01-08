@@ -177,6 +177,7 @@ paths:
               start @single
               name @single
               about @single
+              tzStamp @single @optional
               actor @single {
                 fName @single
                 about @single
@@ -192,12 +193,14 @@ paths:
             "schema": "http://schema.org/",
             "pb": "http://pbcore.org/pbcore-controlled-vocabularies/creatorrole-and-contributorrole-vocabulary/#",
             "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
             "Panel": "swc:Panel",
             "Talk": "swc:TalkEvent",
             "name": "schema:name",
             "logo": "schema:logo",
             "about": "schema:about",
             "actor": "schema:actor",
+            "tzStamp": "ex:timeZoneStamp",
             "start": "schema:startDate",
             "description": "schema:description",
             "location": "schema:location",

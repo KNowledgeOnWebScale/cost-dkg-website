@@ -9,21 +9,55 @@ block content
             h1 Events
             p Find all past and upcoming events of this COST action below.
 
+    br
+
+    table
+        tr
+        th Title
+        th Date 
+        
+        each event in main[0].organises
+            if event.url !== "/talks"
+                tr
+                td
+                    if event.name 
+                        if event.url !== "#"
+                            a(href=`${event.url}`,target='_blank') #{event.name}
+                        else 
+                            span #{event.name}
+                    else
+                        | (Not yet announced)
+                td  
+                    - var slashIndex = event.start.indexOf('/');
+                    = slashIndex !== -1 ? event.start.slice(0, slashIndex) : event.start
+
+
     div.row.justify-content-center
         div.col-8
-            ul
-                each event in main[0].organises
-                    li
-                        if event.url !== '#'
-                            a(href=`${event.url}`) #{event.name}
-                        else
-                            span #{event.name}
-                        span &nbsp(#{event.start})
-
+            
+            br
+            br
             p Find other, relevant events below.
+            br
 
-            ul
-              each event in main[0].endorses
-                  li
-                      a(href=`${event.url}`) #{event.name}
-                      span &nbsp(#{event.start})
+    table
+        tr
+        th Title
+        th Date 
+        
+        each event in main[0].endorses
+            tr
+            td
+                if event.name 
+                    if event.url !== "#"
+                        a(href=`${event.url}`,target='_blank') #{event.name}
+                    else 
+                        span #{event.name}
+                else
+                    | (Not yet announced)
+            td  
+                - var slashIndex = event.start.indexOf('/');
+                = slashIndex !== -1 ? event.start.slice(0, slashIndex) : event.start
+
+
+        
