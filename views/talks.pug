@@ -16,15 +16,19 @@ block content
     br
     table
         tr
+        th Speaker
         th Title
         th Date 
         th Link
-        th Speaker
-
 
         each talk in talks 
             
             tr
+            td 
+                if talk.actor.fName
+                    span  #{talk.actor.fName}
+                else
+                    | (Not yet announced)
             td
                 if talk.name
                     a(href="#" + talk.name)= talk.name
@@ -42,11 +46,7 @@ block content
                 else
                     | (Not yet announced)
 
-            td 
-                if talk.actor.fName
-                    span  #{talk.actor.fName}
-                else
-                    | (Not yet announced)
+            
 
                 
     br 

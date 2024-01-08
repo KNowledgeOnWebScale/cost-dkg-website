@@ -1058,8 +1058,8 @@ in this area in both my research group, and others, and outline the key
 challenges and future opportunities still outstanding in this area.
     """ ;
     schema:url       "/talks" ;
-    schema:startDate "2023-12-07T18:00:00+01:00" ;
-    ex:timeZoneStamp "https://zonestamp.toolforge.org/1701968400"^^schema:URL.
+    schema:startDate "2024-01-31T18:00:00+01:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1706720400"^^schema:URL.
 
 :talk-mark-a-musen
     a                schema:Event, swc:TalkEvent ;
@@ -1085,8 +1085,27 @@ challenges and future opportunities still outstanding in this area.
     schema:name      "Explainability with Knowledge Graphs: what have we learnt?" ;
     schema:actor     [ foaf:name          "Ilaria Tiddi" ;
                        schema:about "Vrije Universiteit Amsterdam" ;
-                       schema:description """""" ] ;
-    schema:about     """""" ;
+                       schema:description """Ilaria Tiddi is an Assistant Professor in Hybrid Intelligence at the
+Knowledge in AI (KAI) group of the Vrije Universiteit Amsterdam (NL).
+Her research focuses on creating systems that generate complex
+narratives through a combination of semantic technologies, open data
+and machine learning, applied mostly in scientific and robotics
+scenarios. She is Editor-in-Chief of the CEUR-WS publication, part of
+the Steering Committee for the Hybrid Human-AI Conference, and
+Coordinator of the international Staff Exchange for the Dutch Hybrid
+Intelligence consortium. Since 2014, she is regularly active in the
+OCs/PCs of the major venues in the KR field (ISWC/ESWC, HHAI, WWW,
+CIKM, IJCAI/ECAI).""" ] ;
+    schema:about     """We hear about explanations for AI all the time these days, since the
+the latest (deep) machine learning solutions revealed to provide highly
+accurate, but hardly scrutable and interpretable decisions. In 2013, we
+were looking into using Knowledge Graphs to create explanations from ML
+outputs, well before we even heard of the term eXplainable AI (XAI,
+coined by DARPA in 2017). In this teasing talk, we will look into this
+work from today’s perspective, including what has been done in this
+context, whether it is still useful and relevant, and whether the same
+methods still apply. We will conclude with a discussion on the future
+of these ideas, hoping to foster new research in this direction.""" ;
     schema:url       "/talks" ;
     schema:startDate "2024-01-17T18:00:00+01:00" ;
     ex:timeZoneStamp "https://zonestamp.toolforge.org/1705510800"^^schema:URL.
@@ -1097,7 +1116,7 @@ challenges and future opportunities still outstanding in this area.
     schema:location  [ a           schema:VirtualLocation ;
                        schema:name "" ;
                        schema:url  ""^^schema:URL ] ;
-    schema:name      "" ;
+    schema:name      "Does the Knowledge Graphs community care about semantics?" ;
     schema:actor     [ foaf:name          "Peter F. Patel-Schneider" ;
                        schema:about "" ;
                        schema:description """""" ] ;
