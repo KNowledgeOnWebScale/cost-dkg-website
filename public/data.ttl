@@ -1022,8 +1022,8 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
     a                schema:Event, swc:TalkEvent ;
     schema:organizer : ;
     schema:location  [ a           schema:VirtualLocation ;
-                       schema:name "" ;
-                       schema:url  ""^^schema:URL ] ;
+                       schema:name "YouTube" ;
+                       schema:url  "https://www.youtube.com/watch?v=n1M5iv196jw"^^schema:URL ] ;
     schema:name      "Neurosymbolic Approaches for Robust Domain-Specific Semantic Search: Current Progress and Future Opportunities" ;
     schema:actor     [ foaf:name          "Mayank Kejriwal" ;
                        schema:about "University of Southern California" ;
@@ -1070,8 +1070,47 @@ challenges and future opportunities still outstanding in this area.
     schema:name      "Semantic Technology in Science: Enhancing Data Stewardship in Support of New Discovery" ;
     schema:actor     [ foaf:name          "Mark A. Musen" ;
                        schema:about "Stanford University" ;
-                       schema:description """""" ] ;
-    schema:about     """""" ;
+                       schema:description """Dr. Musen is the Stanford Medicine Professor of Biomedical Informatics
+Research at Stanford University.  He conducts research related to open
+science, intelligent systems, computational ontologies, and biomedical
+decision support.  His group developed Protégé, the world's most widely
+used technology for building and managing terminologies and ontologies.
+He served as principal investigator of the National Center for
+Biomedical Ontology, one of the original National Centers for
+Biomedical Computing created by the U.S. National Institutes of Health,
+leading to the BioPortal ontology repository.  He directs the Center
+for Expanded Data Annotation and Retrieval (CEDAR), founded under the
+NIH Big Data to Knowledge Initiative.  CEDAR develops semantic
+technology to ease the authoring and management of experimental
+metadata. 
+Dr. Musen was the recipient of the Donald A. B. Lindberg Award for
+Innovation in Informatics from the American Medical Informatics
+Association in 2006.  He has been elected to the American College of
+Medical Informatics, the International Academy of Health Sciences
+Informatics, and the U.S. National Academy of Medicine.""" ] ;
+    schema:about     """Much of the Semantic Web research community emerged from the cadre of
+investigators who were studying the engineering of knowledge-based
+systems in the 1990s.  Development of such systems required intense
+interactions between modelers and subject-matter experts to build
+symbolic representations of discipline-specific knowledge.  Such
+knowledge-engineering activities may be making a comeback, as funders
+and regulators require scientists of all kinds to share their
+experimental datasets online, in a manner that makes the data findable,
+accessible, interoperable, and reusable (FAIR).  At the core of data
+FAIRness is the idea that the metadata that describe experimental
+datasets must adhere to the standards used by the relevant scientific
+communities, aiding dataset search and integration.  Typically, those
+metadata standards are not well specified, which impedes the ability of
+researchers to locate existing datasets and to perform secondary
+analysis in the hope of making new discoveries.  This situation is
+driving a new kind of knowledge engineering—one to formalize the
+preferences of various scientific communities regarding the way their
+experiments should be described.  The CEDAR Workbench, a suite of tools
+that builds on other semantic technologies that we have developed at
+Stanford University, demonstrates how the elicitation and formal
+representation of community standards for experimental metadata both
+enhances access to and reuse of scientific datasets and, by extension,
+can lead to better science.""" ;
     schema:url       "/talks" ;
     schema:startDate "2024-03-04T18:00:00+01:00" ;
     ex:timeZoneStamp "https://zonestamp.toolforge.org/1709571600"^^schema:URL.
@@ -1080,8 +1119,8 @@ challenges and future opportunities still outstanding in this area.
     a                schema:Event, swc:TalkEvent ;
     schema:organizer : ;
     schema:location  [ a           schema:VirtualLocation ;
-                       schema:name "" ;
-                       schema:url  ""^^schema:URL ] ;
+                       schema:name "YouTube" ;
+                       schema:url  "https://www.youtube.com/watch?v=8u91I86qY_c"^^schema:URL ] ;
     schema:name      "Explainability with Knowledge Graphs: what have we learnt?" ;
     schema:actor     [ foaf:name          "Ilaria Tiddi" ;
                        schema:about "Vrije Universiteit Amsterdam" ;
