@@ -1065,8 +1065,8 @@ challenges and future opportunities still outstanding in this area.
     a                schema:Event, swc:TalkEvent ;
     schema:organizer : ;
     schema:location  [ a           schema:VirtualLocation ;
-                       schema:name "" ;
-                       schema:url  ""^^schema:URL ] ;
+                       schema:name "YouTube" ;
+                       schema:url  "https://www.youtube.com/watch?v=G0oAFE65tB8"^^schema:URL ] ;
     schema:name      "Semantic Technology in Science: Enhancing Data Stewardship in Support of New Discovery" ;
     schema:actor     [ foaf:name          "Mark A. Musen" ;
                        schema:about "Stanford University" ;
@@ -1153,8 +1153,8 @@ of these ideas, hoping to foster new research in this direction.""" ;
     a                schema:Event, swc:TalkEvent ;
     schema:organizer : ;
     schema:location  [ a           schema:VirtualLocation ;
-                       schema:name "" ;
-                       schema:url  ""^^schema:URL ] ;
+                       schema:name "YouTube" ;
+                       schema:url  "https://www.youtube.com/watch?v=HqsefLg_8LM"^^schema:URL ] ;
     schema:name      "Does the Knowledge Graphs community care about semantics?" ;
     schema:actor     [ foaf:name          "Peter F. Patel-Schneider" ;
                        schema:about "" ;
@@ -1193,3 +1193,20 @@ of attention to even the simplest of semantic foundations.""" ;
     schema:url       "/talks" ;
     schema:startDate "2024-04-17T18:00:00+02:00" ;
     ex:timeZoneStamp "https://zonestamp.toolforge.org/1713366000"^^schema:URL.
+
+
+:talk-jerven-tjalling-bolleman
+    a                schema:Event, swc:TalkEvent ;
+    schema:organizer : ;
+    schema:location  [ a           schema:VirtualLocation ;
+                       schema:name "YouTube" ;
+                       schema:url  "https://www.youtube.com/@costdkg4356"^^schema:URL ] ;
+    schema:name      """UniProt and others: FAIRly large and connected SPARQL in the
+life-sciences""" ;
+    schema:actor     [ foaf:name          "Jerven Tjalling Bolleman" ;
+                       schema:about "" ;
+                       schema:description """""" ] ;
+    schema:about     """""" ;
+    schema:url       "/talks" ;
+    schema:startDate "2024-06-17T18:00:00+02:00" ;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1718640000"^^schema:URL.
