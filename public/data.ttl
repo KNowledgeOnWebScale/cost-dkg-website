@@ -1228,3 +1228,99 @@ life-sciences""" ;
     schema:url       "/talks" ;
     schema:startDate "2024-06-17T18:00:00+02:00" ;
     ex:timeZoneStamp "https://zonestamp.toolforge.org/1718640000"^^schema:URL.
+
+:dkg-plenary-2024
+    a                                                                              swc:WorkshopEvent, schema:Event ;
+    schema:url       "/plenary24" ;
+    schema:name "DKG Plenary Meeting 2024" ;
+    schema:organizer : ;
+    schema:startDate "2024-09-10T09:00:00+02:00" ;
+    schema:endDate   "2024-09-11T18:00:00+02:00" ;
+
+    schema:location  [ a              schema:Place ;
+                       schema:name
+                         "" ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:streetAddress "" ;
+                                        schema:postalCode    "" ;
+                                        schema:addressLocality "Vienna" ;
+                                        schema:addressCountry  "Austria" ] ] ;
+    
+    ex:travel """Travel""";
+
+    ex:plan """
+
+#### Tuesday 10 September 2024 
+
+9:00-10:30: MC meeting
+
+10:30-11:00: Coffe break
+
+11:00-11:15: Welcome
+
+11:15-12:15: Research Keynote Aidan Hogan
+
+12:15-14:00: Lunch
+
+14:00-16:00: Research Talks
+
+16:00-16:30: Coffee Break
+
+16:30-19:00: Research Panel Discussion “Semantic Web: Semantics - done! (and gone) - where is the web?”
+
+19:00: Social Dinner
+
+
+
+#### Wednesday 11 September 2024 
+
+9:00-10:00: Industry Keynote Katariina Kari
+
+10:00-10:30: Coffee Break
+
+10:30-12:00: Lightning talks / Poster Session
+ 
+12:00-13:30: Lunch
+
+13:30-15:00: Follow-up activities
+
+15:00-15:30: Coffee Break
+
+15:30-17:00: Industry Panel Discussion
+
+17:00: Closing
+    """.
+
+:sosy2024
+a                                                                               schema:Event ;
+    schema:url       "https://events.vito.be/sosy2024" ;
+    schema:name "2nd Solid Symposium" ;
+    schema:organizer : ;
+    schema:startDate "2024-05-02T08:30:00+02:00" ;
+    schema:endDate   "2024-05-03T17:00:00+02:00" ;
+
+    schema:location  [ a              schema:Place ;
+                       schema:name
+                         "Faculty Club" ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:streetAddress "Groot Begijnhof 14" ;
+                                        schema:postalCode    "3000" ;
+                                        schema:addressLocality "Leuven" ;
+                                        schema:addressCountry  "Belgium" ] ] ;.
+
+:fed-query2024
+a                                                                               schema:Event ;
+    schema:url       "https://github.com/MaastrichtU-IDS/FedQuery2024" ;
+    schema:name "FedQuery Workshop 2024" ;
+    schema:organizer : ;
+    schema:startDate "2024-06-26T09:30:00+02:00" ;
+    schema:endDate   "2024-06-28T15:45:00+02:00" ;
+
+    schema:location  [ a              schema:Place ;
+                       schema:name
+                         "Ada Byron Research Building" ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:streetAddress "C/ Arquitecto Francisco Peñalosa 18" ;
+                                        schema:postalCode    "29071" ;
+                                        schema:addressLocality "Malaga" ;
+                                        schema:addressCountry  "Spain" ] ] ;.
