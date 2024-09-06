@@ -1,0 +1,31 @@
+extends layout
+
+block style
+    link(rel="stylesheet", href="/style/main.css")
+    link(rel="stylesheet", href="/style/talks.css")
+
+block content
+    div.row.justify-content-center.panel
+        div.col-10
+            h1 #{workshop[0].name}
+
+    div.row.justify-content-center
+        div.col-10
+            p Start: #{workshop[0].start}
+            p End: #{workshop[0].end}
+            p Location: #{workshop[0].location.address.addressLocality}, #{workshop[0].location.address.addressCountry}
+
+    br
+    div.row.justify-content-center
+        div.col-10
+            h2 Schedule
+            div !{workshop[0].plan}
+            br
+            br
+
+    //- div.row.justify-content-center
+    //-     div.col-10
+    //-         h3 Committee Members
+    //-         ul
+    //-           each cmember in workshop[0].committee_member
+    //-             li #{cmember.name} (#{cmember.affiliation.name})
