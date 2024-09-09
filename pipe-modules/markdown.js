@@ -2,9 +2,9 @@ const md = require('markdown-it')({ html: true });
 
 module.exports = {
   markdownWorkshop: function(data) {
-    if (data.data.length > 0 && data.data[0].name && ( data.data[0].name.toLowerCase().includes('workshop') || data.data[0].name.includes('DKG Plenary Meeting 2024'))) {
+    if (data.data.length > 0 && data.data[0].name && ( data.data[0].name.toLowerCase().includes('workshop') || data.data[0].name.includes('Plenary Meeting'))) {
       const workshop = data.data[0];
-
+      
       if (workshop.about) {
         workshop.about = render(workshop.about);
       }

@@ -559,21 +559,6 @@ Social activity: The High Furnaces & Exhibitions at Belval
     ex:timeZoneStamp "https://zonestamp.toolforge.org/1653804000"^^schema:URL.
 
 
-:gp2-plenary-meeting
-    a                                                                              schema:Event ;
-    schema:organizer : ;
-    schema:name "GP2 Plenary Meeting" ;
-    schema:startDate "2022-10-13T09:00:00+01:00" ;
-    schema:endDate "2022-10-14T17:00:00+01:00" ;
-    schema:url "#" ;
-    schema:location  [ a              schema:Place ;
-                       schema:name "SZTAKI";
-                       schema:url "https://www.sztaki.hu/";
-                       schema:address [ a                      schema:PostalAddress ;
-                                        schema:addressLocality "Budapest" ;
-                                        schema:addressCountry  "Hungary" ] ] ;
-    ex:timeZoneStamp "https://zonestamp.toolforge.org/1665730800"^^schema:URL.
-
 :dkg-plenary-2021
     a                schema:Event ;
     schema:organizer : ;
@@ -908,18 +893,6 @@ Abstract: Growing dynamic and distributed environments, such as the web or IoT-b
                                         schema:addressLocality "Izmir" ;
                                         schema:addressCountry  "Turkey" ] ] ;
     ex:timeZoneStamp "https://zonestamp.toolforge.org/1682402400"^^schema:URL.
-
-:plenary-gp3-meeting
-    a                                                                              schema:Event ;
-    schema:organizer : ;
-    schema:name "Plenary GP3 Meeting" ;
-    schema:startDate "2023-09-25T09:00:00+02:00" ;
-    schema:url "#";
-    schema:location  [ a              schema:Place ;
-                       schema:address [ a                      schema:PostalAddress ;
-                                        schema:addressLocality "Málaga" ;
-                                        schema:addressCountry  "Spain" ] ] ;
-    ex:timeZoneStamp "https://zonestamp.toolforge.org/1695621600"^^schema:URL.
 
 :talk-ian-horrocks
     a                schema:Event, swc:TalkEvent ;
@@ -1324,3 +1297,160 @@ a                                                                               
                                         schema:postalCode    "29071" ;
                                         schema:addressLocality "Malaga" ;
                                         schema:addressCountry  "Spain" ] ] ;.
+
+:gp2-plenary-meeting
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "DKG GP2 Plenary Meeting 2022" ;
+    schema:startDate "2022-10-13T09:00:00+01:00" ;
+    schema:endDate "2022-10-14T17:00:00+01:00" ;
+    schema:url "/plenary22" ;
+    schema:location  [ a              schema:Place ;
+                       schema:name "SZTAKI";
+                       schema:url "https://www.sztaki.hu/";
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Budapest" ;
+                                        schema:addressCountry  "Hungary" ] ] ;
+
+    ex:plan """
+####  Thursday 13 October 2022
+
+09:30 - 10:00: Welcome
+
+10:00 - 12:00: Management Committee (MC) meeting
+Note: non-MC participants can attend the MC meeting part without voting rights
+
+12:00 - 13:30:Lunch break
+
+13:30 - 14:30: Keynote - Angela Bonifati
+
+Title: Big Graph Processing Systems
+
+Abstract: 
+Graphs are data model abstractions that are becoming pervasive in several real-life applications and use cases. In these settings, users primarily focus on entities and their relationships, further enhanced with multiple labels and properties to form the so-called property graphs. Modern big graph processing systems need to keep pace with the increasing fundamental requirements of these applications and to tackle unforeseen challenges. Motivated by our community-wide vision on future graph processing systems, in this talk I will present the system challenges that are lying behind big graph processing and analytics research areas. Many current graph query engines only support subsets of graph queries that they can efficiently evaluate, thus disregarding more expressive query fragments on top of property graphs. It becomes crucial to address efficient query evaluation for complex graph queries, as well the extensibility of the underlying graph query and constraint languages and the support of property graph schemas. Moreover, the dynamic aspects of query evaluation on streaming graphs are equally important components of big graph ecosystems and require design and benchmarking efforts. During the talk, I intend to touch upon our work on these topics and to pinpoint the research directions and open problems for big graph processing systems.
+
+14:30 - 15:00: Coffee break
+
+15:00 - 17:00: Posters/Demos/STSM speed dating
+
+Dinner - Social Event
+
+#### Friday 14th October 2022
+
+09:00 - 10:00: Keynote: Sabrina Kirrane
+
+Title: Following the rules: From Policies to Norms
+
+Abstract: Since its inception, the world wide web has evolved from a medium for information dissemination, to a general information and communication technology that supports economic and societal interaction and collaboration across the globe. Existing web-based applications range from e-commerce and e-government services, to various media and social networking platforms, many of whom incorporate software agents, such as bots and digital assistants. However, the original semantic web vision, whereby machine readable web data could be automatically actioned upon by intelligent software web agents, has yet to be realised. In this talk, we will show how rules, in the form of policies and norms, can be used to specify a variety of data usage constraints (access policies, licenses, privacy preferences, regulatory constraints), in a manner that supports automated enforcement or compliance checking. Additionally, we discuss how, when taken together, policies, preferences, and norms can be used to afford humans more control and transparency with respect to individual and collaborating agents. Finally, we will highlight several open challenges and opportunities.
+
+
+
+10:00 - 10:30: Coffee
+
+10:30 - 11:30: WG meetings (e.g., WG2+WG4)
+
+11:30 - 12:30: WG meetings
+
+12:30 - 13:30: Lunch break
+
+13:30 - 14:30: WG meetings
+
+14:30 - 15:30: WG meetings
+
+15:30 - 16:30: Coffee break
+
+16:30-17:30: Wrap-up & next steps
+
+    """;
+
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1665730800"^^schema:URL.
+
+:plenary-gp3-meeting
+    a                                                                              schema:Event ;
+    schema:organizer : ;
+    schema:name "DKG GP3 Plenary Meeting 2023" ;
+    schema:startDate "2023-09-25T09:00:00+02:00" ;
+    schema:endDate "2023-09-26T18:00:00+02:00" ;
+    schema:url "/plenary23";
+    schema:location  [ a              schema:Place ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:addressLocality "Málaga" ;
+                                        schema:addressCountry  "Spain" ] ] ;
+    
+    ex:plan """
+#### Monday 25th September 2023
+
+09.30 - 11.00: MC Meeting
+
+11:00 - 11:30: Coffee
+
+11:30-13:00: Keynote: Chiara Ghidini (Fondazione Bruno Kessler, IT) - 1h
+
+Title: Semantic modeling and analysis of complex data-aware processes and their executions
+
+Abstract: The worlds of Business Process Management (BPM) and Process Mining has had only few connections with those of Knowledge Management and Semantic Web. Indeed their intersections amounted in few attempts to model semantic business processes or exploit ontologies, such as the BPMN ontology, to reason on semantically enriched process models. One of the reasons of this distance might lie in the fact that the business process oriented communities were mainly focused on handling temporally oriented entities such as activities and their temporal (work)flows relations, while the knowledge oriented ones were mainly focused on the modelling and handling of static entities and relations. In the last few years nonetheless the two groups have started expanding their interests and this may end up in better connecting with each others. Indeed, the business process communities have started looking more and more towards multi-dimensional processes, characterised by a complex network of entities that go beyond the typical event-based ones and include data objects, resources, actors, goals, among others. At the same time the knowledge oriented one has shown a growing interest in temporally denoted entities such as events, stories and narratives. In this talk I will use some of our works on Semantic Modelling and Analysis of Complex Data-aware Processes and their Executions to try to highlight possible connections between these two worlds and by showing how OWL knowledge bases can be used to model and query not only Data-aware Processe models but also process executions. Moreover I will introduce the new concept of Knowledge Event Graphs so as to highlight how semantically enriched graphs could provide benefits to the BPM community.
+
+13:00 - 14:00: Lunch
+
+14:00 - 15:30: Joint WG meeting: Educational material for Distributed Knowledge Graphs: topics and lecture material
+
+15:30 - 16:00: Coffee
+
+16:00 - 17:30: Joint WG meeting: Educational material for Distributed Knowledge Graphs: hands-on material
+
+19:00: Dinner
+
+#### Tuesday 26th September 2023
+
+09:30 - 11:00: Gaia-X / Dataspaces
+
+1. Keynote: Johannes Theissen-Lipp (Fraunhofer FIT, DE) - 30min
+
+Title: Semantic Foundations of Dataspaces: Insights from Gaia-X and the IDS
+
+Abstract: Digital transformation is rapidly changing the way we work and live. Data has emerged as a driver of innovation, enabling organizations to gain insights, make decisions and create competitive advantage. The need to maintain control over data as it is shared is being addressed by dataspaces, funded by the EU with €4-6 billion. In this talk, we evaluate the potential of semantics as a building block for dataspaces, share insights from Gaia-X and the International Data Spaces, and motivate future collaboration to overcome current limitations.
+
+2. Talk: Marco Hauff (Fraunhofer IIS, DE) - 10min
+
+Title: The Web and Linked Data as a Solid Foundation for Dataspaces
+
+Abstract: The concepts for dataspaces range from database management systems to cross-company platforms for data and applications. In this short paper, we present the “Solid Data Space” (SDS), a concept for dataspaces that build on top of the (Semantic) Web and Social Linked Data (Solid). Existing Web technologies and Linked Data principles form the foundation for open, decentralized networks for sovereign data exchange between citizens, organizations, and companies. Domain-specific dataspace implementations can extend the agreements for communication and collaboration to enable specific functionality. We compare the SDS with principles and components of the emerging International Data Spaces to identify similarities and point out technological differences.
+
+3. Talk: Ioannis Chrysakis (KU Leuven, BE) - 20min
+
+Title: Overview of Data Ecosystems
+
+Abstract: Data-driven innovation has recently changed the mindset in data sharing from centralized architectures and monolithic exploitation of data by data providers (data platforms) to decentralized architectures and different data sharing options among all involved participants (data ecosystems). Collaborative data sharing is strengthened through the establishment of several legal frameworks (e.g., European Strategy for Data, Data Act, Data Governance Act) and emerging technical initiatives providing the means to build data ecosystems (DEs). However, the differences between them are not clear,   making it hard to choose the most suitable for each scenario,  and, thus, impacting negatively their adoption. Since the domain is growing fast, there is a need of a review of the state-of-the-art DE initiatives. In this presentation we will review the state of the art in DE initiatives, describe their innovative aspects, compare them through a technical and business comparison, identify common features and practises and finally identify open challenges.
+
+11:00 - 11:30: Coffee
+
+11:30 - 13:00: Joint WG meeting: Research Agenda
+
+13:00 - 14:00: Lunch
+
+14:00 - 15:30: Lightning Talks from the WGs
+
+1. Sijin Cheng: Considering Vocabulary Mappings in Query Plans for Federations of RDF Data Sources
+
+2. David Chaves Fraga: The EU Public Procurement Data Space
+
+3. Sadok Ben Yahia: Reducing ChatGPT Hallucination through the Knowledge Graph: An International Trade Use Case
+
+4. Andrei Olaru: AI Folk: Building a machine learning culture
+
+5. Antoine Zimmermann: Autonomous Web Agents as prosumers of KGs
+
+6. Marco Hauff: Agent-Based Usage Control in Dataspaces: A Step Towards Personalized Data Management
+
+7. Jose Emilio Labra Gayo: RDFShape: A Web-based tool to teach Semantic Web Technologies
+
+8. Andreas Harth: Towards representation and reasoning with process descriptions on the web
+
+9. Karlis Cerans: Data Schemas and Queries over Knowledge Graphs
+
+15:30 - 16:00: Coffee
+
+16:00 - 17:00: Wrap up
+    
+    """;
+    ex:timeZoneStamp "https://zonestamp.toolforge.org/1695621600"^^schema:URL.
