@@ -1231,15 +1231,26 @@ life-sciences""" ;
 
 11:00-11:15: Welcome
 
-11:15-12:15: Research Keynote Aidan Hogan
+11:15-12:15: Research Keynote: Aidan Hogan (CL)
 
 12:15-14:00: Lunch
 
 14:00-16:00: Research Talks
+    Ross Horne (LU): "SSI, from Specifications to Protocol? Formally Verify Security!" (WWW24)
+    Andreas Harth (DE): "Towards Representing Processes and Reasoning with Process Descriptions on the Web" (TGDK)
+    Olaf Hartig (SE): "FedShop: A Benchmark for Testing the Scalability of SPARQL Federation Engines" (ISWC24)
+    Zubaria Asma (GR): "NPCS: Native Provenance Computation for SPARQL" (WWW24)
 
 16:00-16:30: Coffee Break
 
-16:30-19:00: Research Panel Discussion “Semantic Web: Semantics - done! (and gone) - where is the web?”
+16:30-19:00: Research Panel Discussion: Semantic Web: Semantics - done! (and gone) - where is the web?
+    Moderator:
+         Axel Polleres, WU Vienna (AT)
+    Panelists:
+         Catherine Faron, Inria / U. Côte d'Azur (FR)
+         Aidan Hogan, U Chile (CL)
+         Katja Hose, TU Vienna (AT)
+         Tobias Käfer, KIT (DE)
 
 19:00: Social Dinner
 
@@ -1247,19 +1258,25 @@ life-sciences""" ;
 
 #### Wednesday 11 September 2024 
 
-9:00-10:00: Industry Keynote Katariina Kari
+9:00-10:00: Industry Keynote: Katariina Kari (FI)
 
 10:00-10:30: Coffee Break
 
-10:30-12:00: Lightning talks / Poster Session
+10:30-12:00: Lightning talks / Poster Session (Chair: Amin Anjomshoaa (AT))
  
 12:00-13:30: Lunch
 
-13:30-15:00: Follow-up activities
+13:30-15:00: Follow-up activities (Chair: Valentina Janev (RS)) 
 
 15:00-15:30: Coffee Break
 
-15:30-17:00: Industry Panel Discussion
+15:30-17:00: Industry Panel Discussion: Practical applications of distributed knowledge graphs and corresponding challenges
+    Moderator:
+        Olaf Hartig (SE)
+    Panelists:
+        Josiane Parreira, Siemens (DE)
+        Katariina Kari, formerly IKEA and Zalando (FI)
+        Laurens Debackere, Digital Flanders (BE)
 
 17:00: Closing
     """.
