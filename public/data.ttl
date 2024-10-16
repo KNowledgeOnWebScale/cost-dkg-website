@@ -1264,6 +1264,24 @@ life-sciences""" ;
 17:00: Closing
     """.
 
+:webAgents24
+a                                                                               schema:Event ;
+    schema:url       "https://github.com/w3c-cg/webagents/tree/main/Meetings/2024-08-29-DKG-workshop" ;
+    schema:name "Autonomous Web Agents as Knowledge Graphs prosumers" ;
+    schema:organizer : ;
+    schema:startDate "2024-08-29T09:00:00+01:00" ;
+    schema:endDate   "2024-08-29T18:00:00+01:00" ;
+
+    schema:location  [ a              schema:Place ;
+                       schema:name
+                         "University College Dublin, School of Computer Science" ;
+                       schema:address [ a                      schema:PostalAddress ;
+                                        schema:streetAddress "Belfield" ;
+                                        schema:postalCode    "4" ;
+                                        schema:addressLocality "Dublin" ;
+                                        schema:addressCountry  "Ireland" ] ] ;.
+
+
 :sosy2024
 a                                                                               schema:Event ;
     schema:url       "https://events.vito.be/sosy2024" ;
