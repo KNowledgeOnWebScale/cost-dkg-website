@@ -4,7 +4,7 @@ info:
   version: 1.0.0
 x-walder-datasources:
   - http://localhost:3000/data.ttl
-  - https://natadimou.com/#me
+  - http://localhost:3000/endorsed.ttl
 paths:
   /:
     get:
@@ -176,6 +176,7 @@ paths:
               start @single
               name @single
               about @single
+              tzStamp @single @optional
               actor @single {
                 fName @single
                 about @single
@@ -191,12 +192,14 @@ paths:
             "schema": "http://schema.org/",
             "pb": "http://pbcore.org/pbcore-controlled-vocabularies/creatorrole-and-contributorrole-vocabulary/#",
             "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
             "Panel": "swc:Panel",
             "Talk": "swc:TalkEvent",
             "name": "schema:name",
             "logo": "schema:logo",
             "about": "schema:about",
             "actor": "schema:actor",
+            "tzStamp": "ex:timeZoneStamp",
             "start": "schema:startDate",
             "description": "schema:description",
             "location": "schema:location",
@@ -480,6 +483,314 @@ paths:
       x-walder-postprocessing:
         formatEventDates:
           source: utils.js
+  /pidskg23:
+    get:
+      summary: Second COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs PIDSKG’23
+      responses:
+        200:
+          description: Information about COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs (PIDSKG)
+          x-walder-input-text/html: pidskg23.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          workshop: >
+            {
+              type (_:Workshop)
+              name @single
+              start @single
+              committee @single
+              end @single
+              about @single
+              journalIssue @single
+              travel @single
+              plan @single
+              location @single {
+                name @single
+                address @single {
+                  streetAddress @single
+                  postalCode @single
+                  addressLocality @single
+                  addressCountry @single
+                }
+              }
+              cmember {
+                name @single
+                affiliation @single {
+                  name @single
+                }
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
+            "Workshop": "swc:WorkshopEvent",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "travel": "ex:travel",
+            "cmember": "ex:cmember",
+            "committee": "ex:committee",
+            "plan": "ex:plan",
+            "journalIssue": "ex:journalIssue",
+            "address": "schema:address",
+            "streetAddress": "schema:streetAddress",
+            "postalCode": "schema:postalCode",
+            "addressLocality": "schema:addressLocality",
+            "addressCountry": "schema:addressCountry",
+            "location": "schema:location",
+            "home": "schema:homeLocation",
+            "affiliation": "schema:affiliation",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+      x-walder-postprocessing:
+        formatStartDateTalksAndPanel:
+          source: utils.js
+        markdownWorkshop:
+          source: markdown.js
+  /plenary24:
+    get:
+      summary: DKG Plenary Meeting 2024
+      responses:
+        200:
+          description: Information about DKG Plenary Meeting 2024 in Vienna, Austria (10-11 September)
+          x-walder-input-text/html: plenary24.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single 
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          workshop: >
+            {
+              type (_:Workshop)
+              name @single 
+              start @single
+              end @single
+              plan @single
+              location @single {
+                name @single
+                address @single {
+                  addressLocality @single
+                  addressCountry @single
+                }
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
+            "Workshop": "swc:WorkshopEvent",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "travel": "ex:travel",
+            "random": "ex:random",
+            "cmember": "ex:cmember",
+            "committee": "ex:committee",
+            "plan": "ex:plan",
+            "journalIssue": "ex:journalIssue",
+            "address": "schema:address",
+            "streetAddress": "schema:streetAddress",
+            "postalCode": "schema:postalCode",
+            "addressLocality": "schema:addressLocality",
+            "addressCountry": "schema:addressCountry",
+            "location": "schema:location",
+            "home": "schema:homeLocation",
+            "affiliation": "schema:affiliation",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+      x-walder-postprocessing:
+        formatStartDateTalksAndPanel:
+          source: utils.js
+        markdownWorkshop:
+          source: markdown.js
+  /plenary22:
+    get:
+      summary: DKG Plenary Meeting 2022
+      responses:
+        200:
+          description: Information about DKG Plenary Meeting 2022 in Budapest, Hungary (13-14 October 2022)
+          x-walder-input-text/html: plenary22.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single 
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          workshop: >
+            {
+              type (_:Event)
+              name @single 
+              start @single
+              end @single
+              plan @single
+              location @single {
+                name @single
+                address @single {
+                  addressLocality @single
+                  addressCountry @single
+                }
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
+            "Event": "schema:Event",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "travel": "ex:travel",
+            "random": "ex:random",
+            "cmember": "ex:cmember",
+            "committee": "ex:committee",
+            "plan": "ex:plan",
+            "journalIssue": "ex:journalIssue",
+            "address": "schema:address",
+            "streetAddress": "schema:streetAddress",
+            "postalCode": "schema:postalCode",
+            "addressLocality": "schema:addressLocality",
+            "addressCountry": "schema:addressCountry",
+            "location": "schema:location",
+            "home": "schema:homeLocation",
+            "affiliation": "schema:affiliation",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+      x-walder-postprocessing:
+        filter_label:
+          source: filter_label.js
+          parameters:
+            - _data
+            - "dkg gp2" 
+        formatStartDateTalksAndPanel:
+          source: utils.js
+        markdownWorkshop:
+          source: markdown.js
+  /plenary23:
+    get:
+      summary: DKG Plenary Meeting 2023
+      responses:
+        200:
+          description: Information about DKG Plenary Meeting 2023 in Malaga, Spain (25-26 September 2023)
+          x-walder-input-text/html: plenary23.pug
+      x-walder-query:
+        graphql-query:
+          main: >
+            {
+              id @single 
+              name @single
+              logo @single
+              twitter @single
+            }
+          see: >
+            {
+              see @single
+            }
+          workshop: >
+            {
+              type (_:Event)
+              name @single 
+              start @single
+              end @single
+              plan @single
+              location @single {
+                address @single {
+                  addressLocality @single
+                  addressCountry @single
+                }
+              }
+            }
+        json-ld-context: >
+          {
+            "schema": "http://schema.org/",
+            "swc": "http://data.semanticweb.org/ns/swc/ontology#",
+            "ex": "http://example.com/dkg/",
+            "Event": "schema:Event",
+            "name": "schema:name",
+            "logo": "schema:logo",
+            "about": "schema:about",
+            "actor": "schema:actor",
+            "start": "schema:startDate",
+            "end": "schema:endDate",
+            "travel": "ex:travel",
+            "random": "ex:random",
+            "cmember": "ex:cmember",
+            "committee": "ex:committee",
+            "plan": "ex:plan",
+            "journalIssue": "ex:journalIssue",
+            "address": "schema:address",
+            "streetAddress": "schema:streetAddress",
+            "postalCode": "schema:postalCode",
+            "addressLocality": "schema:addressLocality",
+            "addressCountry": "schema:addressCountry",
+            "location": "schema:location",
+            "home": "schema:homeLocation",
+            "affiliation": "schema:affiliation",
+            "url": "schema:url",
+            "description": "schema:description",
+            "twitter": "http://open.vocab.org/terms/twitter-id",
+            "see": "http://www.w3.org/2000/01/rdf-schema#see",
+            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+      x-walder-postprocessing:
+        filter_label:
+          source: filter_label.js
+          parameters:
+            - _data
+            - "dkg gp3" 
+        formatStartDateTalksAndPanel:
+          source: utils.js
+        markdownWorkshop:
+          source: markdown.js
 x-walder-errors:
   404:
     description: Page not found

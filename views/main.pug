@@ -9,7 +9,7 @@ block welcome-message
     div.welcome-message-title-first COST ACTION
     div.welcome-message-title-last &nbspDKG
     div.welcome-message-content
-      | Connecting researchers across Europe around the topic of Distributed Knowlede Graphs.
+      | Connecting researchers across Europe around the topic of Distributed Knowledge Graphs.
     div#welcome-message-arrow
       i.fas.fa-chevron-down
 
@@ -39,7 +39,7 @@ block content
       div.col-lg-4.home-leftcol.order-lg-1
         div.row.justify-content-center.full-height
           div.button.col-10.col-sm-8
-            a(href="/pidskg").button-a Call for Contributions
+            a(href="/pidskg23").button-a Call for Contributions
             div.button-footer COST EU Workshop on Privacy Issues in Distributed Social Knowledge Graphs
             a(href="/workinggroups").button-a Participate
             div.button-footer We look forward to work with you!
@@ -60,24 +60,73 @@ block content
               |
               a(href="https://bgjar.com/polygon-luminary.html") BGJar
 
+      - var foundEvent = false 
+      - var foundTalk = false 
+
       div.col-lg-4.order-lg-3
         div.row.justify-content-center
           div.col-12.col-sm-8
             div.row.justify-content-center
-              div.events-title.col-10 UPCOMING EVENTS
-              each event in main[0].organises
+              div.events-title.col-10 UPCOMING TALK
+              each event in main[0].organises 
+                if event.url === "/talks"
+                  - foundTalk = true
+                  div.event-entry.col-10
+                    div.row
+                      div.col-12
+                        i.far.fa-calendar.calender-logo &nbsp
+                        - var end = event.endHour ? ' - ' + event.endHour : ''
+                        =event.start
+                    div.row
+                      div.col-12
+                      p #{event.name} &nbsp
+                        if event.url !== '#'
+                          span
+                            a(href=`${event.url}`) Learn more
+                
+                - break
+
+              if !foundTalk
                 div.event-entry.col-10
                   div.row
                     div.col-12
                       i.far.fa-calendar.calender-logo &nbsp
-                      - var end = event.endHour ? ' - ' + event.endHour : ''
-                      =event.start
+                      | No upcoming talks
+              
+              a(href='/talks') See all talks
+              br 
+              br 
+
+              div.events-title.col-10 UPCOMING EVENT
+              each event in main[0].organises 
+                if event.url !== "/talks"
+                  - foundEvent = true
+                  div.event-entry.col-10
+                    div.row
+                      div.col-12
+                        i.far.fa-calendar.calender-logo &nbsp
+                        - var end = event.endHour ? ' - ' + event.endHour : ''
+                        =event.start
+                    div.row
+                      div.col-12
+                      p #{event.name} &nbsp
+                        if event.url !== '#'
+                          span
+                            a(href=`${event.url}`) Learn more
+                - break
+
+              if !foundEvent
+                div.event-entry.col-10
                   div.row
                     div.col-12
-                    p #{event.name} &nbsp
-                      span
-                        a(href=`${event.url}`) Learn more
+                      i.far.fa-calendar.calender-logo &nbsp
+                      | No upcoming events
+
               a(href='/events') See all events
+              br 
+              br 
+
+
 
           div.col-10.col-sm-8.col-xl-6
             div.row

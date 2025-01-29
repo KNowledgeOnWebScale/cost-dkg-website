@@ -1,0 +1,119 @@
+@prefix schema:  <http://schema.org/> .
+@prefix ex:      <http://example.com/dkg/> .
+@prefix :        <http://dkg.com/> .
+
+:guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them
+    a                schema:Event ;
+    schema:name      "Guest Talk: Frank van Harmelen \"Hybrid Intelligence: AI systems that collaborate with people instead of replacing them\"" ;
+    schema:startDate "2022-09-01T16:00:00+02:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1662037200"^^schema:URL; 
+    schema:url       "https://www.wu.ac.at/en/dpkm/news-details/detail/guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them/".
+
+:endorse-guest-talk-frank-van-harmelen-2022
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :guest-talk-frank-van-harmelen-hybrid-intelligence-ai-systems-that-collaborate-with-people-instead-of-replacing-them.
+
+:knowsgraphs-winter-school
+    a                schema:Event ;
+    schema:name      "KnowGraphs Winter School 2023" ;
+    schema:startDate "2023-03-07T09:00:00+01:00" ;
+    schema:endDate "2023-03-09T17:00:00+01:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1678176000"^^schema:URL; 
+    schema:url       "https://knowgraphs.eu/ws2023/".
+
+:endorse-knowsgraphs-winter-school
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :knowsgraphs-winter-school.
+
+:iswr-summer-school
+    a                schema:Event ;
+    schema:name      "International Semantic Web Research Summer School" ;
+    schema:startDate "2023-06-11T09:00:00+02:00" ;
+    schema:endDate "2023-06-17T17:00:00+02:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1686463200"^^schema:URL; 
+    schema:url       "https://2023.semanticwebschool.org/".
+
+:endorse-iswr-summer-school
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :iswr-summer-school.
+
+:dagstuhl-semiar-23081
+    a                schema:Event ;
+    schema:name      "Dagstuhl Seminar 23081: Agents on the Web" ;
+    schema:startDate "2023-02-19T09:00:00+01:00" ;
+    schema:endDate "2023-02-24T17:00:00+01:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1676793600"^^schema:URL; 
+    schema:url       "https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23081".
+
+:endorse-dagstuhl-semiar-23081
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :dagstuhl-semiar-23081.
+
+:dagstuhl-semiar-24061
+    a                schema:Event ;
+    schema:name      "Dagstuhl Seminar 24061: Are Knowledge Graphs Ready for the Real World? Challenges and Perspective" ;
+    schema:startDate "2024-02-04T09:00:00+01:00" ;
+    schema:endDate "2024-02-09T17:00:00+01:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1707033600"^^schema:URL; 
+    schema:url       "https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/24061".
+
+:endorse-dagstuhl-semiar-24061
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :dagstuhl-semiar-24061.
+
+:salld-3
+    a                schema:Event ;
+    schema:name      "SALLD-3 – Sentiment Analysis and Linguistic Linked Data" ;
+    schema:startDate "2023-09-13T09:00:00+02:00" ;
+    schema:endDate "2023-09-13T17:00:00+02:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1694584800"^^schema:URL; 
+    schema:url       "https://www.salld.org/salld-3/".
+
+:endorse-salld-3
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :salld-3.
+
+:4lr
+    a                schema:Event ;
+    schema:name      "4LR – Linking Lexicographic and Language Learning Data" ;
+    schema:startDate "2023-09-13T09:00:00+02:00" ;
+    schema:endDate "2023-09-13T17:00:00+02:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1694584800"^^schema:URL; 
+    schema:url       "https://lexicala.com/4lr/".
+
+:endorse-4lr
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :4lr.
+
+:nlp4kgc-workshop
+    a                schema:Event ;
+    schema:name      "NLP4KGC: 1st International Workshop on Natural Language Processing for Knowledge Graph Creation" ;
+    schema:startDate "2023-04-30T09:00:00-06:00" ;
+    schema:endDate "2023-05-04T17:00:00-06:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1682863200"^^schema:URL; 
+    schema:url       "https://sites.google.com/view/nlp4kg".
+
+:endorse-nlp4kgc-workshop
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :nlp4kgc-workshop.
+
+:ai-enabled-information-systems
+    a                schema:Event ;
+    schema:name      "AI-enabled information systems" ;
+    schema:startDate "2023-12-21T09:00:00+01:00" ;
+    schema:endDate "2023-12-23T17:00:00+01:00" ;
+    ex:timeStampZone "https://zonestamp.toolforge.org/1703145600"^^schema:URL; 
+    schema:url       "http://aieissession.alwaysdata.net/".
+
+:endorse-ai-enabled-information-systems
+    a schema:EndorseAction;
+    schema:endorsee :;
+    schema:object :ai-enabled-information-systems.

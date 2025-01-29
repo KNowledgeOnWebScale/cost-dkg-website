@@ -5,6 +5,7 @@
 .members-flag {
     height: 50%;
     margin-top: 5%;
+    border: 1px solid black;
 }
 
 .members-row {

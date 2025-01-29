@@ -13,22 +13,74 @@ block content
 
     - var panelist = panel[0].panelist.map(a => a.fName).join(', ');
 
+    br
+    table
+        tr
+        th Speaker
+        th Title
+        th Date 
+        th Link
+
+        each talk in talks 
+            
+            tr
+            td 
+                if talk.actor.fName
+                    span  #{talk.actor.fName}
+                else
+                    | (Not yet announced)
+            td
+                if talk.name
+                    a(href="#" + talk.name)= talk.name
+                else
+                    | (Not yet announced)
+            td 
+                - var slashIndex = talk.start.indexOf('/');
+                = slashIndex !== -1 ? talk.start.slice(0, slashIndex) : talk.start
+                if talk.tzStamp
+                    br 
+                    a(href=talk.tzStamp,target='_blank') View in Local Time
+            td 
+                if talk.location.url
+                    a(href=talk.location.url, target='_blank')= talk.location.name
+                else
+                    | (Not yet announced)
+
+            
+
+                
+    br 
+    br 
+    br
+
     div.row.justify-content-center
         div.col-10
             ul
               each talk in talks
-                  li.event
-                    h3 #{talk.actor.fName}: "#{talk.name}" (#{talk.actor.about})
+                  li.event(id=talk.name)
+                    if talk.name
+                        h3 #{talk.actor.fName}: "#{talk.name}"
+                            if talk.actor.about
+                                span  (#{talk.actor.about})
+                    else
+                        h3 Talk by #{talk.actor.fName}
                     ul
                         - var start = (new Date(talk.start))
-                        li When: #{talk.start}
-                        if talk.location
+                        li When: 
+                            - var slashIndex = talk.start.indexOf('/');
+                            = slashIndex !== -1 ? talk.start.slice(0, slashIndex) : talk.start
+                            if talk.tzStamp 
+                                a(href=talk.tzStamp,target='_blank') View in Local Time
+                        if talk.location && talk.location.url
                             li
                                 span Where:&nbsp;
                                 a(href=talk.location.url)
                                     span #{talk.location.name}
-                        li About the speaker: #{talk.actor.description}
-                        li About the talk: #{talk.about}
+                        if talk.actor.description
+                            li About the speaker: #{talk.actor.description}
+                        if talk.about
+                            li About the talk: #{talk.about}
+                    br
               li.event
                 h3 SWSA Panel "#{panel[0].name}"
                 ul

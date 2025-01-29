@@ -1,3 +1,23 @@
 .content {
     margin-top: 5.5em;
 }
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    max-width: 250px; 
+    overflow:auto;
+    text-overflow: ellipsis; 
+    
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
